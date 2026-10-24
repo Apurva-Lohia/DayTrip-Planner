@@ -9,8 +9,8 @@
    ========================================================= */
 @layer base {
   :root {
-    --color-paper: #f3f5f2;
-    --color-surface: #ffffff;
+    --color-paper: #f8f2e9;
+    --color-surface: #fffdf8;
     --color-sunken: #eef2ef;
     --color-ink: #13231e;
     --color-ink-2: #4a5a54;
@@ -30,13 +30,13 @@
 
     --font-sans: 'Schibsted Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
     --radius-s: 8px;
-    --radius-m: 12px;
-    --radius-l: 16px;
+    --radius-m: 14px;
+    --radius-l: 22px;
     --shadow-1: 0 1px 2px rgb(19 35 30 / .05);
     --shadow-2: 0 1px 2px rgb(19 35 30 / .04), 0 8px 24px -12px rgb(19 35 30 / .14);
     --focus: 0 0 0 3px var(--color-surface), 0 0 0 5px var(--color-haze);
-    --gutter: clamp(16px, 4vw, 40px);
-    --max: 1280px;
+    --gutter: clamp(20px, 3vw, 56px);
+    --max: none;
   }
   html { -webkit-text-size-adjust: 100%; }
   body {
@@ -453,12 +453,83 @@
   .footer-inner { padding-bottom: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .spinner { animation: spin 2s linear infinite !important; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: 0s !important; }
+  .spinner { animation: none !important; }
 }
 @media print {
   .site-header, .steps, .mode-note, .sample-return, .result-navigation, .view-switch, .workspace-map, .site-footer, .workspace-actions { display: none !important; }
   .workspace-panes { grid-template-columns: 1fr; }
   .journey-workspace, .panel { box-shadow: none; }
   .tl-leg details > div, .journey-steps { display: grid !important; }
+}
+/* Existing planner components share the revised theme's semantic styles. */
+@layer components {
+  .muted { color: var(--color-ink-2); }
+  .eyebrow { color: var(--color-ink-3); font-size: 10px; letter-spacing: .16em; font-weight: 700; }
+  small { display: block; margin-top: 5px; color: var(--color-ink-3); font-size: 12px; }
+  .brand-mark { display: grid; place-items: center; width: 38px; height: 38px; background: #a34e36; color: white; border-radius: 50%; }
+  .page-heading > div:first-child { min-width: 0; max-width: 65ch; }
+  .page-heading h1 { margin: 8px 0 12px; }
+  .page-heading h1 em { color: #a34e36; font-family: Georgia, serif; font-weight: 400; }
+  .sample-entry .eyebrow { font-size: 10px; color: var(--color-ink-3); margin-bottom: 8px; }
+  .sample-entry { flex-basis: 400px; }
+  .summary-route { display: flex; gap: 12px; margin: 20px 0; }
+  .summary-route svg { flex-shrink: 0; color: #edc297; margin-top: 5px; }
+  .summary-route b, .summary-route span { display: block; }
+  .summary-route b { font-size: 14px; margin-top: 4px; }
+  .summary-route small, .summary-route span, .summary-panel .muted, .summary-panel .eyebrow { color: #d5e0d6; }
+  .summary-route small { font-size: 10px; letter-spacing: .1em; }
+  .summary-route span { font-size: 12px; margin-top: 4px; }
+  .summary-panel h2 { margin-top: 8px; font-family: Georgia, serif; font-size: 25px; font-weight: 400; }
+  .summary-panel .chip { height: auto; min-height: 40px; border-color: #6e8176; }
+  .summary-panel .chip:has(input:checked) { background: #35584a; color: white; }
+  .time-settings > summary b { font-size: 12px; font-weight: 500; color: var(--color-ink-2); }
+  .preferences-panel > details > summary > span { font-size: 12px; color: var(--color-ink-2); }
+  .stop-row { align-items: start; }
+  .stop-row .field { max-width: 220px; margin-top: 8px; }
+  .stop-row .field-label { font-size: 12px; }
+  .activity-row { display: block; padding-bottom: 16px; border-bottom: 1px solid var(--color-line); }
+  .activity-row > .field:not(.grow) { width: 100%; }
+  .search-results button > span { flex: 1; min-width: 0; }
+  .search-results svg { flex-shrink: 0; }
+  .search-results small { font-size: 12px; }
+  .notice.error { display: block; }
+  .choice-title > span { font-size: 11px; color: var(--color-eucalypt); flex-shrink: 0; }
+  .route-choice[aria-pressed=true] { background: var(--color-eucalypt-tint); }
+  .timeline-place span { display: block; font-size: 11px; font-weight: 500; margin: 4px 0; color: var(--color-sandstone-ink); }
+  .timeline .tl-node { padding-bottom: 20px; }
+  .timeline .tl-leg { padding-top: 0; padding-bottom: 20px; }
+  .timeline .tl-leg .tl-marker { background: var(--color-haze-tint); color: var(--color-haze); }
+  .timeline .tl-leg .tl-title { font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+  .timeline .muted, .timeline .mt-2 { font-size: 12px; }
+  .journey-step { padding: 9px 10px; font-size: 12px; background: var(--color-sunken); margin-top: 5px; border-radius: 8px; }
+  .timeline > li:last-child::after, .timeline > li:last-child::before { display: none; }
+  .trip-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 18px; }
+  .trip-toolbar .stats { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .trip-toolbar .stats > div { padding-block: 4px; }
+  .trip-notes > p { padding: 8px 16px; font-size: 13px; }
+  .empty-state > svg { margin: 0 auto 18px; }
+  .site-footer { margin-top: 32px; background: transparent; }
+  .site-footer .footer-inner { padding-inline: 0; }
+  .workspace-list { scroll-padding-block: 16px; }
+}
+@media(min-width:1250px) {
+  .form-sections { grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: start; }
+  .form-sections > .panel:first-child > .grid { grid-template-columns: 1fr; }
+  .preferences-panel { grid-column: 1 / -1; }
+}
+@media(max-width:900px) {
+  .sample-entry { display: block; flex-basis: auto; }
+  .sample-entry p { margin-block: 7px 12px; }
+}
+@media(max-width:640px) {
+  .step-num { width: 22px; height: 22px; flex-shrink: 0; }
+  .steps button { font-size: 11px; gap: 5px; }
+  .sample-entry button { white-space: normal; height: auto; min-height: 44px; }
+  .trip-toolbar { flex-direction: column; align-items: stretch; }
+  .trip-toolbar .stats > div { padding: 4px 8px; border: 0; }
+  .trip-toolbar .stats dt { font-size: 10px; }
+  .trip-toolbar .stats dd { font-size: 16px; }
+  .header-inner { gap: 10px; }
+  .time-settings > summary b { width: 100%; }
 }
