@@ -1,19 +1,38 @@
 import http from "node:http";
 import { readFile } from "node:fs/promises";
-import { plan, validate } from "./engine.js";
-import { places, sydneyTime } from "./data.js";
+import { places, sydneyTime, distance } from "./data.js";
+import { buildDay } from "./day-planner.js";
 
-const serverKey = process.env.GOOGLE_SERVER_KEY;
-const browserKey = process.env.GOOGLE_MAPS_BROWSER_KEY;
-const liveReady = !!(serverKey && browserKey);
+// Load local keys when running with Node 22+.
+// Vercel supplies its own environment variables.
+if (!process.env.VERCEL) {
+  try {
+    process.loadEnvFile(".env");
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+}
 
-function json(response, status, data) {
-  response.writeHead(status, {
+const serverKey = process.env.GOOGLE_SERVER_KEY?.trim();
+const browserKey = process.env.GOOGLE_MAPS_BROWSER_KEY?.trim();
+const liveReady = Boolean(serverKey && browserKey);
+
+function json(res, status, data) {
+  res.writeHead(status, {
     "Content-Type": "application/json",
-    "Cache-Control": "no-store",
+    "Cache-Control": "no-store"
   });
 
-  response.end(JSON.stringify(data));
+  res.end(JSON.stringify(data));
+}
+
+function today() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Australia/Sydney",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date());
 }
 
 async function google(url, body, fields) {
@@ -22,124 +41,229 @@ async function google(url, body, fields) {
     headers: {
       "Content-Type": "application/json",
       "X-Goog-Api-Key": serverKey,
-      "X-Goog-FieldMask": fields,
+      "X-Goog-FieldMask": fields
     },
     body: JSON.stringify(body),
-    signal: AbortSignal.timeout(20000),
+    signal: AbortSignal.timeout(20000)
   });
 
   const data = await response.json();
 
   if (!response.ok) {
     throw Error(
-      `Google API returned ${response.status}. ` +
-      "Check enabled APIs, key restrictions, billing and quota."
+      `Google API returned ${response.status}. Check enabled APIs, billing, key restrictions and quota.`
     );
   }
 
   return data;
 }
 
-function point(place) {
+// Broad Sydney / Blue Mountains search boundary.
+function inRegion(p) {
+  return (
+    p.location &&
+    p.location.latitude >= -34.3 &&
+    p.location.latitude <= -33.3 &&
+    p.location.longitude >= 150.2 &&
+    p.location.longitude <= 151.5
+  );
+}
+
+const venueFields = [
+  "places.id",
+  "places.displayName",
+  "places.formattedAddress",
+  "places.location",
+  "places.types",
+  "places.businessStatus",
+  "places.currentOpeningHours",
+  "places.regularOpeningHours"
+].join(",");
+
+const locationFields = [
+  "places.id",
+  "places.displayName",
+  "places.formattedAddress",
+  "places.location",
+  "places.types"
+].join(",");
+
+function toPlace(p) {
   return {
-    location: {
-      latLng: {
-        latitude: place.lat,
-        longitude: place.lng,
-      },
-    },
+    id: p.id,
+    name: p.displayName?.text || p.formattedAddress,
+    address: p.formattedAddress || "",
+    lat: p.location.latitude,
+    lng: p.location.longitude,
+    types: p.types || [],
+    businessStatus: p.businessStatus,
+    currentOpeningHours: p.currentOpeningHours,
+    regularOpeningHours: p.regularOpeningHours,
+    hoursDate: today()
   };
 }
 
-const seconds = (value) =>
-  Number.parseFloat(value || "0s");
-
-function decodePolyline(encoded) {
-  let index = 0;
-  let latitude = 0;
-  let longitude = 0;
-  const points = [];
-
-  function next() {
-    let value = 0;
-    let shift = 0;
-    let byte;
-
-    do {
-      byte = encoded.charCodeAt(index++) - 63;
-      value |= (byte & 31) << shift;
-      shift += 5;
-    } while (byte >= 32 && index < encoded.length);
-
-    return value & 1 ? ~(value >> 1) : value >> 1;
-  }
-
-  while (index < encoded.length) {
-    latitude += next();
-    longitude += next();
-    points.push([latitude / 1e5, longitude / 1e5]);
-  }
-
-  return points;
-}
-
-async function liveJourney(from, to, start, input) {
-  const departure = sydneyTime(input.date, start);
+async function searchPlaces(q, area, suburbsOnly = false) {
+  const body = {
+    textQuery: area
+      ? `${q} near ${area.name}, NSW Australia`
+      : `${q}, NSW Australia`,
+    pageSize: area ? 6 : 20,
+    regionCode: "AU",
+    languageCode: "en",
+    locationBias: area
+      ? {
+          circle: {
+            center: {
+              latitude: area.lat,
+              longitude: area.lng
+            },
+            radius: 5000
+          }
+        }
+      : {
+          rectangle: {
+            low: {
+              latitude: -34.3,
+              longitude: 150.2
+            },
+            high: {
+              latitude: -33.3,
+              longitude: 151.5
+            }
+          }
+        }
+  };
 
   const data = await google(
-    "https://routes.googleapis.com/directions/v2:computeRoutes",
-    {
-      origin: point(from),
-      destination: point(to),
-      travelMode: "TRANSIT",
+    "https://places.googleapis.com/v1/places:searchText",
+    body,
+    area ? venueFields : locationFields
+  );
+
+  return (data.places || [])
+    .filter(inRegion)
+    .map(toPlace)
+    .filter(p => {
+      const nearArea = !area || distance(p, area) <= 8;
+
+      const isSuburb =
+        !suburbsOnly ||
+        p.types.some(type =>
+          [
+            "locality",
+            "sublocality",
+            "sublocality_level_1"
+          ].includes(type)
+        );
+
+      return nearArea && isSuburb;
+    });
+}
+
+const point = p => ({
+  location: {
+    latLng: {
+      latitude: p.lat,
+      longitude: p.lng
+    }
+  }
+});
+
+const sec = value => Number.parseFloat(value || "0s");
+
+function decode(str) {
+  let i = 0;
+  let lat = 0;
+  let lng = 0;
+  const out = [];
+
+  const next = () => {
+    let n = 0;
+    let shift = 0;
+    let b;
+
+    do {
+      b = str.charCodeAt(i++) - 63;
+      n |= (b & 31) << shift;
+      shift += 5;
+    } while (b >= 32 && i < str.length);
+
+    return n & 1 ? ~(n >> 1) : n >> 1;
+  };
+
+  while (i < str.length) {
+    lat += next();
+    lng += next();
+    out.push([lat / 1e5, lng / 1e5]);
+  }
+
+  return out;
+}
+
+async function route(a, b, start, input, walking = false) {
+  const departure = sydneyTime(input.date, start);
+
+  const body = {
+    origin: point(a),
+    destination: point(b),
+    travelMode: walking ? "WALK" : "TRANSIT",
+    languageCode: "en-AU"
+  };
+
+  if (!walking) {
+    Object.assign(body, {
       departureTime: new Date(departure).toISOString(),
       computeAlternativeRoutes: true,
       transitPreferences: {
-        allowedTravelModes: input.modes,
-      },
-      languageCode: "en-AU",
-    },
+        allowedTravelModes: input.modes
+      }
+    });
+  }
+
+  const data = await google(
+    "https://routes.googleapis.com/directions/v2:computeRoutes",
+    body,
     "routes.duration,routes.polyline,routes.legs.steps"
   );
 
-  // Google treats allowedTravelModes as preferences.
-  // Filter returned routes to enforce the app's chosen modes.
-  const allowedVehicles = new Set(
-    input.modes.flatMap((mode) =>
+  const allowed = new Set(
+    input.modes.flatMap(mode =>
       mode === "TRAIN"
         ? [
             "RAIL",
             "HEAVY_RAIL",
             "COMMUTER_TRAIN",
             "HIGH_SPEED_TRAIN",
-            "LONG_DISTANCE_TRAIN",
+            "LONG_DISTANCE_TRAIN"
           ]
         : ["BUS", "INTERCITY_BUS", "TROLLEYBUS"]
     )
   );
 
-  const routes = (data.routes || [])
-    .filter((route) =>
-      route.legs.every((leg) =>
-        leg.steps.every(
-          (step) =>
-            step.travelMode !== "TRANSIT" ||
-            allowedVehicles.has(
-              step.transitDetails?.transitLine?.vehicle?.type
-            )
+  const suitable = (data.routes || []).filter(r => {
+    if (!r.polyline?.encodedPolyline) return false;
+
+    if (walking) {
+      return sec(r.duration) <= 1800;
+    }
+
+    return r.legs.every(leg =>
+      leg.steps.every(step =>
+        step.travelMode !== "TRANSIT" ||
+        allowed.has(
+          step.transitDetails?.transitLine?.vehicle?.type
         )
       )
-    )
-    .sort(
-      (a, b) => seconds(a.duration) - seconds(b.duration)
     );
+  });
 
-  return routes.map((route) => {
+  return suitable.map(r => {
     let cursor = start;
     let wait = 0;
     const steps = [];
 
-    for (const leg of route.legs) {
+    for (const leg of r.legs) {
       for (const step of leg.steps) {
         const transit = step.transitDetails;
         const stopDetails = transit?.stopDetails;
@@ -154,7 +278,7 @@ async function liveJourney(from, to, start, input) {
           ? start +
             (Date.parse(stopDetails.arrivalTime) - departure) /
               60000
-          : begin + seconds(step.staticDuration) / 60;
+          : begin + sec(step.staticDuration) / 60;
 
         wait += Math.max(0, begin - cursor);
 
@@ -165,25 +289,21 @@ async function liveJourney(from, to, start, input) {
               ? "BUS"
               : "TRAIN";
 
-        const line =
-          transit?.transitLine?.nameShort ||
-          transit?.transitLine?.name ||
-          "Transit";
-
-        const destination =
-          transit?.headsign ||
-          stopDetails?.arrivalStop?.name ||
-          "";
+        const label =
+          step.travelMode === "WALK"
+            ? "Walk"
+            : `${
+                transit?.transitLine?.nameShort ||
+                transit?.transitLine?.name ||
+                "Transit"
+              } → ${stopDetails?.arrivalStop?.name || ""}`;
 
         steps.push({
           mode,
-          label:
-            step.travelMode === "WALK"
-              ? "Walk"
-              : `${line} → ${destination}`,
+          label,
           start: begin,
           end,
-          agencies: transit?.transitLine?.agencies || [],
+          agencies: transit?.transitLine?.agencies || []
         });
 
         cursor = end;
@@ -192,39 +312,59 @@ async function liveJourney(from, to, start, input) {
 
     const end = Math.max(
       cursor,
-      start + seconds(route.duration) / 60
+      start + sec(r.duration) / 60
     );
 
     return {
       start,
-      departure: steps[0]?.start || start,
+      departure: steps[0]?.start ?? start,
       end,
       minutes: end - start,
       wait,
-      walk: steps
-        .filter((step) => step.mode === "WALK")
-        .reduce(
-          (total, step) => total + step.end - step.start,
-          0
-        ),
+      walk: walking
+        ? end - start
+        : steps
+            .filter(step => step.mode === "WALK")
+            .reduce(
+              (total, step) => total + step.end - step.start,
+              0
+            ),
       transfers: Math.max(
         0,
-        steps.filter((step) => step.mode !== "WALK").length - 1
+        steps.filter(step => step.mode !== "WALK").length - 1
       ),
       steps,
-      path: decodePolyline(route.polyline.encodedPolyline),
-      sample: false,
+      path: decode(r.polyline.encodedPolyline),
+      sample: false
     };
   });
 }
 
-function toPlace(place) {
-  return {
-    id: place.id,
-    name: place.displayName.text,
-    lat: place.location.latitude,
-    lng: place.location.longitude,
-  };
+async function liveJourney(a, b, start, input) {
+  if (distance(a, b) > 2) {
+    return route(a, b, start, input);
+  }
+
+  // Compare transit with a direct walk for nearby stops.
+  const results = await Promise.allSettled([
+    route(a, b, start, input),
+    route(a, b, start, input, true)
+  ]);
+
+  const routes = results.flatMap(result =>
+    result.status === "fulfilled" ? result.value : []
+  );
+
+  if (
+    !routes.length &&
+    results.some(result => result.status === "rejected")
+  ) {
+    throw results.find(
+      result => result.status === "rejected"
+    ).reason;
+  }
+
+  return routes;
 }
 
 async function food(anchor, kind) {
@@ -232,7 +372,7 @@ async function food(anchor, kind) {
     "https://places.googleapis.com/v1/places:searchNearby",
     {
       includedTypes: [
-        kind === "cafe" ? "cafe" : "restaurant",
+        kind === "cafe" ? "cafe" : "restaurant"
       ],
       maxResultCount: 3,
       rankPreference: "DISTANCE",
@@ -240,168 +380,134 @@ async function food(anchor, kind) {
         circle: {
           center: {
             latitude: anchor.lat,
-            longitude: anchor.lng,
+            longitude: anchor.lng
           },
-          radius: 1200,
-        },
-      },
+          radius: 1200
+        }
+      }
     },
-    [
-      "places.id",
-      "places.displayName",
-      "places.location",
-      "places.businessStatus",
-      "places.currentOpeningHours",
-      "places.regularOpeningHours",
-    ].join(",")
+    venueFields
   );
 
-  const hoursDate = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Australia/Sydney",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(new Date());
-
-  return (data.places || []).map((place) => ({
-    ...toPlace(place),
-    businessStatus: place.businessStatus,
-    currentOpeningHours: place.currentOpeningHours,
-    regularOpeningHours: place.regularOpeningHours,
-    hoursDate,
-  }));
+  return (data.places || []).map(toPlace);
 }
 
 let active = false;
 
-const server = http.createServer(async (request, response) => {
+const server = http.createServer(async (req, res) => {
   try {
-    const url = new URL(request.url, "http://localhost");
+    const url = new URL(req.url, "http://localhost");
 
     if (
-      request.method === "GET" &&
+      req.method === "GET" &&
       url.pathname === "/api/config"
     ) {
-      return json(response, 200, {
+      return json(res, 200, {
         liveReady,
         browserKey: browserKey || null,
-        places,
+        places
       });
     }
 
     if (
-      request.method === "GET" &&
+      req.method === "GET" &&
       url.pathname === "/api/places"
     ) {
-      const query = (url.searchParams.get("q") || "")
-        .slice(0, 150);
+      const q = (url.searchParams.get("q") || "")
+        .trim()
+        .slice(0, 160);
 
-      if (!query.trim()) {
-        return json(response, 200, []);
+      if (q.length < 3) {
+        return json(res, 200, []);
       }
 
       if (!liveReady) {
         return json(
-          response,
+          res,
           200,
-          places.filter(
-            (place) =>
-              !["cafe", "lunch"].includes(place.kind) &&
-              place.name
-                .toLowerCase()
-                .includes(query.toLowerCase())
+          places.filter(p =>
+            p.name.toLowerCase().includes(q.toLowerCase())
           )
         );
       }
 
-      const data = await google(
-        "https://places.googleapis.com/v1/places:searchText",
-        {
-          textQuery: query + " Sydney NSW Australia",
-          maxResultCount: 6,
-          locationBias: {
-            circle: {
-              center: {
-                latitude: -33.79,
-                longitude: 150.85,
-              },
-              radius: 50000,
-            },
-          },
-        },
-        "places.id,places.displayName,places.location"
-      );
-
       return json(
-        response,
+        res,
         200,
-        (data.places || []).map(toPlace)
+        await searchPlaces(
+          q,
+          null,
+          url.searchParams.get("kind") === "suburb"
+        )
       );
     }
 
     if (
-      request.method === "POST" &&
+      req.method === "POST" &&
       url.pathname === "/api/plan"
     ) {
-      const origin = request.headers.origin;
-      const host = request.headers.host;
+      const origin = req.headers.origin;
 
       if (
         origin &&
-        origin !== `http://${host}` &&
-        origin !== `https://${host}`
+        ![
+          `http://${req.headers.host}`,
+          `https://${req.headers.host}`
+        ].includes(origin)
       ) {
-        return json(response, 403, {
-          error: "Cross-origin requests are not permitted.",
+        return json(res, 403, {
+          error: "Cross-origin requests are not permitted."
         });
       }
 
       if (active) {
-        return json(response, 429, {
+        return json(res, 429, {
           error:
-            "A plan is already being calculated. Please wait.",
+            "A plan is already being calculated. Please wait."
         });
       }
 
       let body = "";
 
-      for await (const chunk of request) {
+      for await (const chunk of req) {
         body += chunk;
 
-        if (body.length > 24000) {
-          return json(response, 413, {
-            error: "Request too large.",
+        if (body.length > 100000) {
+          return json(res, 413, {
+            error: "Request too large."
           });
         }
       }
 
       const input = JSON.parse(body);
-      validate(input);
       input.live = liveReady && input.live === true;
 
       if (input.live) {
-        const date = sydneyTime(input.date, 0);
-        const days = (date - Date.now()) / 86400000;
+        const days =
+          (sydneyTime(input.date, 0) - Date.now()) /
+          86400000;
 
-        if (days < -6 || days > 99) {
-          return json(response, 400, {
-            error:
-              "Live routing supports dates within about " +
-              "7 days in the past and 100 days ahead.",
-          });
+        if (
+          !Number.isFinite(days) ||
+          days < -6 ||
+          days > 99
+        ) {
+          throw Error(
+            "Choose a date within the next 100 days."
+          );
         }
       }
 
       active = true;
 
       try {
-        const result = await plan(
-          input,
-          input.live ? liveJourney : undefined,
-          input.live ? food : null
-        );
+        const result = await buildDay(input, {
+          search: searchPlaces,
+          journey: input.live ? liveJourney : undefined,
+          food: input.live ? food : null
+        });
 
-        return json(response, 200, result);
+        return json(res, 200, result);
       } finally {
         active = false;
       }
@@ -410,42 +516,46 @@ const server = http.createServer(async (request, response) => {
     const files = {
       "/": "index.html",
       "/app.js": "app.js",
-      "/styles.css": "styles.css",
+      "/styles.css": "styles.css"
     };
 
-    if (
-      request.method !== "GET" ||
-      !files[url.pathname]
-    ) {
-      return json(response, 404, {
-        error: "Not found",
+    const name = files[url.pathname];
+
+    if (req.method !== "GET" || !name) {
+      return json(res, 404, {
+        error: "Not found"
       });
     }
 
-    const name = files[url.pathname];
     const content = await readFile(
       new URL("./public/" + name, import.meta.url)
     );
 
-    response.writeHead(200, {
+    res.writeHead(200, {
       "Content-Type": name.endsWith(".html")
         ? "text/html; charset=utf-8"
         : name.endsWith(".css")
           ? "text/css"
           : "text/javascript",
-      "X-Content-Type-Options": "nosniff",
+      "X-Content-Type-Options": "nosniff"
     });
 
-    response.end(content);
+    res.end(content);
   } catch (error) {
-    json(response, 400, {
-      error: error.message || "Unable to build the plan.",
+    json(res, 400, {
+      error: error.message || "Unable to build your day."
     });
   }
 });
 
-const port = Number(process.env.PORT) || 3000;
+// Used by api/index.js on Vercel.
+export default server.listeners("request")[0];
 
-server.listen(port, "127.0.0.1", () => {
-  console.log(`Daytrip is ready at http://localhost:${port}`);
-});
+// Used by npm start locally.
+if (!process.env.VERCEL) {
+  const port = Number(process.env.PORT) || 3000;
+
+  server.listen(port, "127.0.0.1", () => {
+    console.log(`Daytrip ready at http://localhost:${port}`);
+  });
+}

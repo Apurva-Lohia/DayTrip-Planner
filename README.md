@@ -24,7 +24,7 @@ npm start
 
 Visit **http://localhost:3000**. Keep the terminal running; press **Ctrl+C** to stop.
 
-No `npm install` is needed.
+The compiled frontend is included, so `npm start` works without installing frontend tools. To edit the React/Tailwind source, run `npm install`, then `npm run build` after making changes.
 
 ## Enable real routes and places
 
@@ -98,3 +98,26 @@ Run tests with:
 ```bash
 npm test
 ```
+
+## React frontend
+
+The interface has three steps: trip details, comparison, and a selected itinerary with map and timeline. Edit src/App.jsx and src/styles.css; run npm run build to regenerate the files in public/. The Node backend and API contract are unchanged.
+
+Demo mode uses existing sample route data and a labelled schematic map. Live mode supports automatic activity discovery or direct place selection, and uses the configured Google map. Place searches and planning in live mode may incur API usage costs. The app does not automatically request live plans.
+
+Inputs remain in memory when moving between steps. Reloading the browser starts a new session. Mid-trip replanning keeps your original home and deadline; choose your last completed stop and edit remaining visit durations.
+
+
+
+### Building on a streamed Google Drive folder
+
+If `npm install` fails with filesystem or native-module write errors on G:, keep the source in this folder and install only the build dependencies on a local disk. The build script accepts a dependency location through `DAYTRIP_TOOLCHAIN` (the folder containing its package.json and node_modules).
+
+For this session, the verified build command in PowerShell was:
+
+```powershell
+$env:DAYTRIP_TOOLCHAIN = 'C:\Users\apurv\Documents\Codex\2026-10-24\task\daytrip-ui'
+npm run build
+```
+
+This points at the tools installed before the instruction to avoid making copies. No backend keys are stored there. `npm start` uses the compiled files already in public and does not require these tools. On a normal local filesystem, `npm install` followed by `npm run build` needs no override.
