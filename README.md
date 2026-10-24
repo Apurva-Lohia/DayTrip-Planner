@@ -121,3 +121,9 @@ npm run build
 ```
 
 This points at the tools installed before the instruction to avoid making copies. No backend keys are stored there. `npm start` uses the compiled files already in public and does not require these tools. On a normal local filesystem, `npm install` followed by `npm run build` needs no override.
+
+## Expanded station picker
+
+Use **Browse all 289 stations** below the starting-point selector. Search names or filter Train, Metro and Light rail. Selection updates your starting/return station; existing address search remains available. Station search uses the bundled official spatial catalogue and does not incur Google API calls. Extra stations require live routing; demo retains the original three sample origins.
+
+Coverage, attribution, source dates, operating-status limitations and refresh instructions are in [data/STATIONS.md](data/STATIONS.md). Refresh with `npm run refresh:stations`, review changes, run tests/build and restart the server. The live Trains preference includes Metro and light rail using Google's documented rail modes.

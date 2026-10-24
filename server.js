@@ -1,4 +1,5 @@
 import http from "node:http";
+import { stations, stationMetadata, searchStations, canonicalStationInput, googleTravelModes, googleVehicleTypes } from "./stations.js";
 import { readFile } from "node:fs/promises";
 import { places, sydneyTime, distance } from "./data.js";
 import { buildDay } from "./day-planner.js";
@@ -216,7 +217,7 @@ async function route(a, b, start, input, walking = false) {
       departureTime: new Date(departure).toISOString(),
       computeAlternativeRoutes: true,
       transitPreferences: {
-        allowedTravelModes: input.modes
+        allowedTravelModes: googleTravelModes(input.modes)
       }
     });
   }
@@ -227,19 +228,7 @@ async function route(a, b, start, input, walking = false) {
     "routes.duration,routes.polyline,routes.legs.steps"
   );
 
-  const allowed = new Set(
-    input.modes.flatMap(mode =>
-      mode === "TRAIN"
-        ? [
-            "RAIL",
-            "HEAVY_RAIL",
-            "COMMUTER_TRAIN",
-            "HIGH_SPEED_TRAIN",
-            "LONG_DISTANCE_TRAIN"
-          ]
-        : ["BUS", "INTERCITY_BUS", "TROLLEYBUS"]
-    )
-  );
+  const allowed = googleVehicleTypes(input.modes);
 
   const suitable = (data.routes || []).filter(r => {
     if (!r.polyline?.encodedPolyline) return false;
@@ -405,8 +394,14 @@ const server = http.createServer(async (req, res) => {
       return json(res, 200, {
         liveReady,
         browserKey: browserKey || null,
-        places
+        places,
+        stations,
+        stationMetadata
       });
+    }
+
+    if (req.method === "GET" && url.pathname === "/api/stations") {
+      return json(res, 200, { stations: searchStations((url.searchParams.get("q") || "").slice(0, 160)), metadata: stationMetadata });
     }
 
     if (
@@ -479,8 +474,9 @@ const server = http.createServer(async (req, res) => {
         }
       }
 
-      const input = JSON.parse(body);
+      let input = JSON.parse(body);
       input.live = liveReady && input.live === true;
+      input = canonicalStationInput(input);
 
       if (input.live) {
         const days =

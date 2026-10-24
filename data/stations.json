@@ -1,0 +1,4380 @@
+{
+  "metadata": {
+    "retrievedAt": "2026-10-24T01:16:50.304Z",
+    "sourceItemModified": "2025-08-18T19:03:46.053Z",
+    "sourceUrl": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_FOI_Transport_Facilities/FeatureServer/1",
+    "sourceItem": "https://portal.spatial.nsw.gov.au/portal/home/item.html?id=a524efb9a8a245ca8891ee665f1a30d3",
+    "attribution": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+    "license": "Creative Commons Attribution 4.0",
+    "licenseUrl": "https://www.nsw.gov.au/nsw-government/about-website/copyright",
+    "coverage": "Sydney, Blue Mountains and nearby intercity station locations within 150.2–151.5 E, 34.3–33.3 S. Not a timetable or guarantee of current services.",
+    "excluded": [
+      "BRADFIELD RAILWAY STATION",
+      "BOTTOM POINTS RAILWAY STATION",
+      "ROYAL NATIONAL PARK TRAMWAY STATION"
+    ],
+    "sourceFeatureHash": "7cee5d5571a78563c2413b1d364193ece10978e83aa1651c559a44d6a42780ec",
+    "count": 289,
+    "modeCounts": {
+      "train": 215,
+      "metro": 21,
+      "lightRail": 58
+    }
+  },
+  "stations": [
+    {
+      "id": "nsw-station-504377337",
+      "sourceId": "504377337",
+      "sourceName": "ALLAWAH RAILWAY STATION",
+      "name": "Allawah Station",
+      "lat": -33.969661,
+      "lng": 151.114464,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.201Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881478",
+      "sourceId": "517881478",
+      "sourceName": "ARLINGTON SLR STOP",
+      "name": "Arlington Light Rail",
+      "lat": -33.9018301,
+      "lng": 151.1380813,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-09-20T15:16:07.926Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377666",
+      "sourceId": "504377666",
+      "sourceName": "ARNCLIFFE RAILWAY STATION",
+      "name": "Arncliffe Station",
+      "lat": -33.9363236,
+      "lng": 151.147372,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.398Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505134971",
+      "sourceId": "505134971",
+      "sourceName": "ARTARMON RAILWAY STATION",
+      "name": "Artarmon Station",
+      "lat": -33.8088329,
+      "lng": 151.1849882,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.104Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378277",
+      "sourceId": "504378277",
+      "sourceName": "ASHFIELD RAILWAY STATION",
+      "name": "Ashfield Station",
+      "lat": -33.8876291,
+      "lng": 151.1257601,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.418Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504180066",
+      "sourceId": "504180066",
+      "sourceName": "ASQUITH RAILWAY STATION",
+      "name": "Asquith Station",
+      "lat": -33.6887059,
+      "lng": 151.108081,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-02T18:16:46.939Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500170664",
+      "sourceId": "500170664",
+      "sourceName": "AUBURN RAILWAY STATION",
+      "name": "Auburn Station",
+      "lat": -33.8493022,
+      "lng": 151.0328402,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:36.140Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135407",
+      "sourceId": "505135407",
+      "sourceName": "BANK STREET LIGHT RAIL STOP",
+      "name": "Bank Street Light Rail",
+      "lat": -33.8709368,
+      "lng": 151.1924107,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2026-02-09T10:13:19.570Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377574",
+      "sourceId": "504377574",
+      "sourceName": "BANKSIA RAILWAY STATION",
+      "name": "Banksia Station",
+      "lat": -33.9451903,
+      "lng": 151.1404013,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.174Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379795",
+      "sourceId": "504379795",
+      "sourceName": "BANKSTOWN RAILWAY STATION",
+      "name": "Bankstown Station",
+      "lat": -33.9178102,
+      "lng": 151.0343179,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.953Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518302112",
+      "sourceId": "518302112",
+      "sourceName": "BARANGAROO RAILWAY STATION",
+      "name": "Barangaroo Station",
+      "lat": -33.8590147,
+      "lng": 151.2026252,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-02-18T09:14:05.851Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377880",
+      "sourceId": "504377880",
+      "sourceName": "BARDWELL PARK RAILWAY STATION",
+      "name": "Bardwell Park Station",
+      "lat": -33.9316611,
+      "lng": 151.1250239,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.314Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504108374",
+      "sourceId": "504108374",
+      "sourceName": "BARGO RAILWAY STATION",
+      "name": "Bargo Station",
+      "lat": -34.291064,
+      "lng": 150.58009,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-29T15:39:03.759Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504331254",
+      "sourceId": "504331254",
+      "sourceName": "BEECROFT RAILWAY STATION",
+      "name": "Beecroft Station",
+      "lat": -33.7496231,
+      "lng": 151.0663421,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.564Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503820675",
+      "sourceId": "503820675",
+      "sourceName": "BELL RAILWAY STATION",
+      "name": "Bell Station",
+      "lat": -33.5056638,
+      "lng": 150.2790162,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.553Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246745",
+      "sourceId": "518246745",
+      "sourceName": "BELLA VISTA RAILWAY STATION",
+      "name": "Bella Vista Station",
+      "lat": -33.7305207,
+      "lng": 150.9440734,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.521Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377947",
+      "sourceId": "504377947",
+      "sourceName": "BELMORE RAILWAY STATION",
+      "name": "Belmore Station",
+      "lat": -33.9172768,
+      "lng": 151.088646,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.347Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473260",
+      "sourceId": "518473260",
+      "sourceName": "BENAUD OVAL LIGHT RAIL STOP",
+      "name": "Benaud Oval Light Rail",
+      "lat": -33.8008838,
+      "lng": 151.0045699,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.247Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645711",
+      "sourceId": "504645711",
+      "sourceName": "BERALA RAILWAY STATION",
+      "name": "Berala Station",
+      "lat": -33.8718356,
+      "lng": 151.0323121,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.462Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504180110",
+      "sourceId": "504180110",
+      "sourceName": "BEROWRA RAILWAY STATION",
+      "name": "Berowra Station",
+      "lat": -33.623546,
+      "lng": 151.1530507,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.999Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377509",
+      "sourceId": "504377509",
+      "sourceName": "BEVERLY HILLS RAILWAY STATION",
+      "name": "Beverly Hills Station",
+      "lat": -33.94911,
+      "lng": 151.0811414,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.137Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377786",
+      "sourceId": "504377786",
+      "sourceName": "BEXLEY NORTH RAILWAY STATION",
+      "name": "Bexley North Station",
+      "lat": -33.93748,
+      "lng": 151.1135919,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.243Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379633",
+      "sourceId": "504379633",
+      "sourceName": "BIRRONG RAILWAY STATION",
+      "name": "Birrong Station",
+      "lat": -33.893339,
+      "lng": 151.0241069,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.918Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503816678",
+      "sourceId": "503816678",
+      "sourceName": "BLACKHEATH RAILWAY STATION",
+      "name": "Blackheath Station",
+      "lat": -33.6332398,
+      "lng": 150.2842484,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.427Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504300932",
+      "sourceId": "504300932",
+      "sourceName": "BLACKTOWN RAILWAY STATION",
+      "name": "Blacktown Station",
+      "lat": -33.7685709,
+      "lng": 150.9072502,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.429Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501766673",
+      "sourceId": "501766673",
+      "sourceName": "BLAXLAND RAILWAY STATION",
+      "name": "Blaxland Station",
+      "lat": -33.7436612,
+      "lng": 150.6097662,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.660Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379215",
+      "sourceId": "504379215",
+      "sourceName": "BONDI JUNCTION RAILWAY STATION",
+      "name": "Bondi Junction Station",
+      "lat": -33.8913531,
+      "lng": 151.2484838,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.808Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261125",
+      "sourceId": "518261125",
+      "sourceName": "BRIDGE STREET LIGHT RAIL STOP",
+      "name": "Bridge Street Light Rail",
+      "lat": -33.8641596,
+      "lng": 151.2073712,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.438Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503816523",
+      "sourceId": "503816523",
+      "sourceName": "BULLABURRA RAILWAY STATION",
+      "name": "Bullaburra Station",
+      "lat": -33.7235373,
+      "lng": 150.4148873,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.372Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378379",
+      "sourceId": "504378379",
+      "sourceName": "BURWOOD RAILWAY STATION",
+      "name": "Burwood Station",
+      "lat": -33.8771702,
+      "lng": 151.1041105,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.559Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500228333",
+      "sourceId": "500228333",
+      "sourceName": "CABRAMATTA RAILWAY STATION",
+      "name": "Cabramatta Station",
+      "lat": -33.894921,
+      "lng": 150.9388075,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:38.389Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504309677",
+      "sourceId": "504309677",
+      "sourceName": "CAMPBELLTOWN RAILWAY STATION",
+      "name": "Campbelltown Station",
+      "lat": -34.0637103,
+      "lng": 150.8143583,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:11.982Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500296371",
+      "sourceId": "500296371",
+      "sourceName": "CAMPSIE RAILWAY STATION",
+      "name": "Campsie Station",
+      "lat": -33.9104948,
+      "lng": 151.1029743,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2017-03-20T16:20:27.218Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500228444",
+      "sourceId": "500228444",
+      "sourceName": "CANLEY VALE RAILWAY STATION",
+      "name": "Canley Vale Station",
+      "lat": -33.886773,
+      "lng": 150.9440172,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:38.668Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504594027",
+      "sourceId": "504594027",
+      "sourceName": "CANTERBURY RAILWAY STATION",
+      "name": "Canterbury Station",
+      "lat": -33.9120338,
+      "lng": 151.118567,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.181Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378685",
+      "sourceId": "504378685",
+      "sourceName": "CAPITOL SQUARE SLR STOP",
+      "name": "Capitol Square Light Rail",
+      "lat": -33.8797333,
+      "lng": 151.2054913,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-08-26T13:56:18.146Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500215866",
+      "sourceId": "500215866",
+      "sourceName": "CARINGBAH RAILWAY STATION",
+      "name": "Caringbah Station",
+      "lat": -34.0416428,
+      "lng": 151.1221459,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.688Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473251",
+      "sourceId": "518473251",
+      "sourceName": "CARLINGFORD LIGHT RAIL STOP",
+      "name": "Carlingford Light Rail",
+      "lat": -33.7816363,
+      "lng": 151.0474716,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.038Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377340",
+      "sourceId": "504377340",
+      "sourceName": "CARLTON RAILWAY STATION",
+      "name": "Carlton Station",
+      "lat": -33.9682976,
+      "lng": 151.1243641,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.985Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500228555",
+      "sourceId": "500228555",
+      "sourceName": "CARRAMAR RAILWAY STATION",
+      "name": "Carramar Station",
+      "lat": -33.8844143,
+      "lng": 150.9614225,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.901Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246752",
+      "sourceId": "518246752",
+      "sourceName": "CASTLE HILL RAILWAY STATION",
+      "name": "Castle Hill Station",
+      "lat": -33.7316701,
+      "lng": 151.0072776,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.710Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500228000",
+      "sourceId": "500228000",
+      "sourceName": "CASULA RAILWAY STATION",
+      "name": "Casula Station",
+      "lat": -33.9500816,
+      "lng": 150.9118503,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:37.561Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261127",
+      "sourceId": "518261127",
+      "sourceName": "CENTRAL CHALMERS STREET LIGHT RAIL STOP",
+      "name": "Central Chalmers Street Light Rail",
+      "lat": -33.8842744,
+      "lng": 151.2077217,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.473Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378686",
+      "sourceId": "504378686",
+      "sourceName": "CENTRAL SLR STOP",
+      "name": "Central Light Rail",
+      "lat": -33.8823702,
+      "lng": 151.2066769,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.594Z",
+      "aliases": []
+    },
+    {
+      "id": "central",
+      "sourceId": "500297848",
+      "sourceName": "CENTRAL RAILWAY STATION",
+      "name": "Central Station",
+      "lat": -33.884055,
+      "lng": 151.2062249,
+      "kind": "origin",
+      "modes": [
+        "train",
+        "metro"
+      ],
+      "demoSupported": true,
+      "sourceUpdated": "2023-04-24T08:57:05.512Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505134967",
+      "sourceId": "505134967",
+      "sourceName": "CHATSWOOD RAILWAY STATION",
+      "name": "Chatswood Station",
+      "lat": -33.7971161,
+      "lng": 151.1809041,
+      "kind": "origin",
+      "modes": [
+        "train",
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.054Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504331272",
+      "sourceId": "504331272",
+      "sourceName": "CHELTENHAM RAILWAY STATION",
+      "name": "Cheltenham Station",
+      "lat": -33.7556702,
+      "lng": 151.0785239,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.630Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246753",
+      "sourceId": "518246753",
+      "sourceName": "CHERRYBROOK RAILWAY STATION",
+      "name": "Cherrybrook Station",
+      "lat": -33.7365556,
+      "lng": 151.0318813,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.751Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504595966",
+      "sourceId": "504595966",
+      "sourceName": "CHESTER HILL RAILWAY STATION",
+      "name": "Chester Hill Station",
+      "lat": -33.8836358,
+      "lng": 150.9995939,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.262Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473262",
+      "sourceId": "518473262",
+      "sourceName": "CHILDRENS HOSPITAL LIGHT RAIL STOP",
+      "name": "Childrens Hospital Light Rail",
+      "lat": -33.8026191,
+      "lng": 150.9930171,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.288Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261128",
+      "sourceId": "518261128",
+      "sourceName": "CHINATOWN LIGHT RAIL STOP",
+      "name": "Chinatown Light Rail",
+      "lat": -33.8785847,
+      "lng": 151.2055311,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.508Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473257",
+      "sourceId": "518473257",
+      "sourceName": "CHURCH STREET LIGHT RAIL STOP",
+      "name": "Church Street Light Rail",
+      "lat": -33.8129427,
+      "lng": 151.003636,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.191Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261129",
+      "sourceId": "518261129",
+      "sourceName": "CIRCULAR QUAY LIGHT RAIL STOP",
+      "name": "Circular Quay Light Rail",
+      "lat": -33.8614556,
+      "lng": 151.210806,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.329Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500171208",
+      "sourceId": "500171208",
+      "sourceName": "CIRCULAR QUAY RAILWAY STATION",
+      "name": "Circular Quay Station",
+      "lat": -33.8613448,
+      "lng": 151.2108596,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.077Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504190382",
+      "sourceId": "504190382",
+      "sourceName": "CLARENDON RAILWAY STATION",
+      "name": "Clarendon Station",
+      "lat": -33.608612,
+      "lng": 150.7879918,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.072Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645673",
+      "sourceId": "504645673",
+      "sourceName": "CLYDE RAILWAY STATION",
+      "name": "Clyde Station",
+      "lat": -33.8361838,
+      "lng": 151.0171717,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.424Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504174074",
+      "sourceId": "504174074",
+      "sourceName": "COALCLIFF RAILWAY STATION",
+      "name": "Coalcliff Station",
+      "lat": -34.2423077,
+      "lng": 150.9773824,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.759Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504100683",
+      "sourceId": "504100683",
+      "sourceName": "COLEDALE RAILWAY STATION",
+      "name": "Coledale Station",
+      "lat": -34.2894005,
+      "lng": 150.9432364,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.681Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504371360",
+      "sourceId": "504371360",
+      "sourceName": "COMO RAILWAY STATION",
+      "name": "Como Station",
+      "lat": -34.0043818,
+      "lng": 151.0681745,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.910Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135596",
+      "sourceId": "505135596",
+      "sourceName": "CONCORD WEST RAILWAY STATION",
+      "name": "Concord West Station",
+      "lat": -33.8485249,
+      "lng": 151.0856366,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-03-29T11:24:22.766Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135408",
+      "sourceId": "505135408",
+      "sourceName": "CONVENTION SLR STOP",
+      "name": "Convention Light Rail",
+      "lat": -33.8726166,
+      "lng": 151.1980954,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2011-07-29T13:25:43.354Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504089310",
+      "sourceId": "504089310",
+      "sourceName": "COWAN RAILWAY STATION",
+      "name": "Cowan Station",
+      "lat": -33.5933579,
+      "lng": 151.1717885,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-02T18:16:45.841Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500215921",
+      "sourceId": "500215921",
+      "sourceName": "CRONULLA RAILWAY STATION",
+      "name": "Cronulla Station",
+      "lat": -34.0560161,
+      "lng": 151.1514412,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.747Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518302698",
+      "sourceId": "518302698",
+      "sourceName": "CROWS NEST RAILWAY STATION",
+      "name": "Crows Nest Station",
+      "lat": -33.8254333,
+      "lng": 151.1989069,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-02-18T09:14:06.124Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500296215",
+      "sourceId": "500296215",
+      "sourceName": "CROYDON RAILWAY STATION",
+      "name": "Croydon Station",
+      "lat": -33.8830577,
+      "lng": 151.1152966,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.438Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645272",
+      "sourceId": "504645272",
+      "sourceName": "DENISTONE RAILWAY STATION",
+      "name": "Denistone Station",
+      "lat": -33.7997172,
+      "lng": 151.087142,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-03-29T11:24:21.441Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379183",
+      "sourceId": "504379183",
+      "sourceName": "DOMESTIC TERMINAL RAILWAY STATION",
+      "name": "Domestic Terminal Station",
+      "lat": -33.9335437,
+      "lng": 151.1798415,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.774Z",
+      "aliases": [
+        "airport"
+      ]
+    },
+    {
+      "id": "nsw-station-500257138",
+      "sourceId": "500257138",
+      "sourceName": "DOONSIDE RAILWAY STATION",
+      "name": "Doonside Station",
+      "lat": -33.7638785,
+      "lng": 150.8688355,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.070Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504051492",
+      "sourceId": "504051492",
+      "sourceName": "DOUGLAS PARK RAILWAY STATION",
+      "name": "Douglas Park Station",
+      "lat": -34.1832197,
+      "lng": 150.7101528,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-29T15:39:02.934Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881479",
+      "sourceId": "517881479",
+      "sourceName": "DULWICH GROVE SLR STOP",
+      "name": "Dulwich Grove Light Rail",
+      "lat": -33.9050511,
+      "lng": 151.1390315,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-09-20T15:16:07.961Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881481",
+      "sourceId": "517881481",
+      "sourceName": "DULWICH HILL SLR STOP",
+      "name": "Dulwich Hill Light Rail",
+      "lat": -33.9103298,
+      "lng": 151.1400835,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.167Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378010",
+      "sourceId": "504378010",
+      "sourceName": "DULWICH HILL RAILWAY STATION",
+      "name": "Dulwich Hill Station",
+      "lat": -33.911095,
+      "lng": 151.1410095,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.382Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518361174",
+      "sourceId": "518361174",
+      "sourceName": "DUNDAS LIGHT RAIL STOP",
+      "name": "Dundas Light Rail",
+      "lat": -33.8038541,
+      "lng": 151.0331631,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.358Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504292152",
+      "sourceId": "504292152",
+      "sourceName": "EAST HILLS RAILWAY STATION",
+      "name": "East Hills Station",
+      "lat": -33.9619528,
+      "lng": 150.9846508,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.383Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501755044",
+      "sourceId": "501755044",
+      "sourceName": "EAST RICHMOND RAILWAY STATION",
+      "name": "East Richmond Station",
+      "lat": -33.6017561,
+      "lng": 150.7591723,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-09T13:45:19.761Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645262",
+      "sourceId": "504645262",
+      "sourceName": "EASTWOOD RAILWAY STATION",
+      "name": "Eastwood Station",
+      "lat": -33.7901409,
+      "lng": 151.082271,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2024-10-01T08:32:35.609Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500301393",
+      "sourceId": "500301393",
+      "sourceName": "EDGECLIFF RAILWAY STATION",
+      "name": "Edgecliff Station",
+      "lat": -33.8793664,
+      "lng": 151.2364088,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.546Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517643079",
+      "sourceId": "517643079",
+      "sourceName": "EDMONDSON PARK RAILWAY STATION",
+      "name": "Edmondson Park Station",
+      "lat": -33.969238,
+      "lng": 150.8586667,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:15:06.545Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504360306",
+      "sourceId": "504360306",
+      "sourceName": "EMU PLAINS RAILWAY STATION",
+      "name": "Emu Plains Station",
+      "lat": -33.7456273,
+      "lng": 150.6718716,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-09T13:45:20.234Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504370922",
+      "sourceId": "504370922",
+      "sourceName": "ENGADINE RAILWAY STATION",
+      "name": "Engadine Station",
+      "lat": -34.0677508,
+      "lng": 151.0148075,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.786Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645119",
+      "sourceId": "504645119",
+      "sourceName": "EPPING RAILWAY STATION",
+      "name": "Epping Station",
+      "lat": -33.7726162,
+      "lng": 151.0820018,
+      "kind": "origin",
+      "modes": [
+        "train",
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.342Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378971",
+      "sourceId": "504378971",
+      "sourceName": "ERSKINEVILLE RAILWAY STATION",
+      "name": "Erskineville Station",
+      "lat": -33.9000995,
+      "lng": 151.1855759,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.506Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261132",
+      "sourceId": "518261132",
+      "sourceName": "ES MARKS LIGHT RAIL STOP",
+      "name": "ES Marks Light Rail",
+      "lat": -33.9058449,
+      "lng": 151.2239634,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.543Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504594119",
+      "sourceId": "504594119",
+      "sourceName": "EXHIBITION CENTRE SLR STOP",
+      "name": "Exhibition Centre Light Rail",
+      "lat": -33.8771755,
+      "lng": 151.1996382,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.117Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500258804",
+      "sourceId": "500258804",
+      "sourceName": "FAIRFIELD RAILWAY STATION",
+      "name": "Fairfield Station",
+      "lat": -33.8722754,
+      "lng": 150.957175,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:39.769Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501766640",
+      "sourceId": "501766640",
+      "sourceName": "FAULCONBRIDGE RAILWAY STATION",
+      "name": "Faulconbridge Station",
+      "lat": -33.6964735,
+      "lng": 150.5351203,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.582Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473259",
+      "sourceId": "518473259",
+      "sourceName": "FENNELL STREET LIGHT RAIL STOP",
+      "name": "Fennell Street Light Rail",
+      "lat": -33.8052213,
+      "lng": 151.0058062,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.228Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645046",
+      "sourceId": "504645046",
+      "sourceName": "FLEMINGTON RAILWAY STATION",
+      "name": "Flemington Station",
+      "lat": -33.8649274,
+      "lng": 151.0701732,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.302Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518429209",
+      "sourceId": "518429209",
+      "sourceName": "GADIGAL RAILWAY STATION",
+      "name": "Gadigal Station",
+      "lat": -33.8738524,
+      "lng": 151.2085878,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-02-18T09:14:06.256Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-516881416",
+      "sourceId": "516881416",
+      "sourceName": "GLEBE SLR STOP",
+      "name": "Glebe Light Rail",
+      "lat": -33.8771958,
+      "lng": 151.1874122,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.431Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501818023",
+      "sourceId": "501818023",
+      "sourceName": "GLENBROOK RAILWAY STATION",
+      "name": "Glenbrook Station",
+      "lat": -33.7691023,
+      "lng": 150.620722,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.778Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500227666",
+      "sourceId": "500227666",
+      "sourceName": "GLENFIELD RAILWAY STATION",
+      "name": "Glenfield Station",
+      "lat": -33.9722852,
+      "lng": 150.8930048,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.784Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504331350",
+      "sourceId": "504331350",
+      "sourceName": "GORDON RAILWAY STATION",
+      "name": "Gordon Station",
+      "lat": -33.7561031,
+      "lng": 151.1543811,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.676Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501718431",
+      "sourceId": "501718431",
+      "sourceName": "GOSFORD RAILWAY STATION",
+      "name": "Gosford Station",
+      "lat": -33.42359,
+      "lng": 151.3417311,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:13.907Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645597",
+      "sourceId": "504645597",
+      "sourceName": "GRANVILLE RAILWAY STATION",
+      "name": "Granville Station",
+      "lat": -33.833104,
+      "lng": 151.0123856,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-03-29T11:24:22.105Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379063",
+      "sourceId": "504379063",
+      "sourceName": "GREEN SQUARE RAILWAY STATION",
+      "name": "Green Square Station",
+      "lat": -33.9060542,
+      "lng": 151.2026281,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.527Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500262581",
+      "sourceId": "500262581",
+      "sourceName": "GUILDFORD RAILWAY STATION",
+      "name": "Guildford Station",
+      "lat": -33.8545287,
+      "lng": 150.9843598,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.230Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500215810",
+      "sourceId": "500215810",
+      "sourceName": "GYMEA RAILWAY STATION",
+      "name": "Gymea Station",
+      "lat": -34.0348217,
+      "lng": 151.0854508,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:11.068Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645546",
+      "sourceId": "504645546",
+      "sourceName": "HARRIS PARK RAILWAY STATION",
+      "name": "Harris Park Station",
+      "lat": -33.8233131,
+      "lng": 151.007637,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-03-29T11:24:21.937Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501738669",
+      "sourceId": "501738669",
+      "sourceName": "HAWKESBURY RIVER RAILWAY STATION",
+      "name": "Hawkesbury River Station",
+      "lat": -33.5471356,
+      "lng": 151.2263411,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.334Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881469",
+      "sourceId": "517881469",
+      "sourceName": "HAWTHORNE SLR STOP",
+      "name": "Hawthorne Light Rail",
+      "lat": -33.8795383,
+      "lng": 151.1472122,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-09-20T15:16:07.758Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261183",
+      "sourceId": "518261183",
+      "sourceName": "HAYMARKET LIGHT RAIL STOP",
+      "name": "Haymarket Light Rail",
+      "lat": -33.8814609,
+      "lng": 151.2053299,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.380Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503818500",
+      "sourceId": "503818500",
+      "sourceName": "HAZELBROOK RAILWAY STATION",
+      "name": "Hazelbrook Station",
+      "lat": -33.7239568,
+      "lng": 150.4545636,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.511Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500215466",
+      "sourceId": "500215466",
+      "sourceName": "HEATHCOTE RAILWAY STATION",
+      "name": "Heathcote Station",
+      "lat": -34.0881473,
+      "lng": 151.0080398,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:10.972Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504174106",
+      "sourceId": "504174106",
+      "sourceName": "HELENSBURGH RAILWAY STATION",
+      "name": "Helensburgh Station",
+      "lat": -34.1770396,
+      "lng": 150.9946788,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.815Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246751",
+      "sourceId": "518246751",
+      "sourceName": "HILLS SHOWGROUND RAILWAY STATION",
+      "name": "Hills Showground Station",
+      "lat": -33.727802,
+      "lng": 150.9871758,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.664Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-515104152",
+      "sourceId": "515104152",
+      "sourceName": "HOLSWORTHY RAILWAY STATION",
+      "name": "Holsworthy Station",
+      "lat": -33.963145,
+      "lng": 150.956548,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:14:35.005Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135494",
+      "sourceId": "505135494",
+      "sourceName": "HOMEBUSH RAILWAY STATION",
+      "name": "Homebush Station",
+      "lat": -33.8668893,
+      "lng": 151.0863833,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.184Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504180003",
+      "sourceId": "504180003",
+      "sourceName": "HORNSBY RAILWAY STATION",
+      "name": "Hornsby Station",
+      "lat": -33.7029554,
+      "lng": 151.0985839,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.875Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500296393",
+      "sourceId": "500296393",
+      "sourceName": "HURLSTONE PARK RAILWAY STATION",
+      "name": "Hurlstone Park Station",
+      "lat": -33.910552,
+      "lng": 151.1318452,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.165Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500295681",
+      "sourceId": "500295681",
+      "sourceName": "HURSTVILLE RAILWAY STATION",
+      "name": "Hurstville Station",
+      "lat": -33.9673494,
+      "lng": 151.1023868,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.351Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500232421",
+      "sourceId": "500232421",
+      "sourceName": "INGLEBURN RAILWAY STATION",
+      "name": "Ingleburn Station",
+      "lat": -33.9973755,
+      "lng": 150.8647308,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:39.217Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379148",
+      "sourceId": "504379148",
+      "sourceName": "INTERNATIONAL TERMINAL RAILWAY STATION",
+      "name": "International Terminal Station",
+      "lat": -33.9349587,
+      "lng": 151.1658704,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.698Z",
+      "aliases": [
+        "airport"
+      ]
+    },
+    {
+      "id": "nsw-station-504371361",
+      "sourceId": "504371361",
+      "sourceName": "JANNALI RAILWAY STATION",
+      "name": "Jannali Station",
+      "lat": -34.0160046,
+      "lng": 151.064664,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.136Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135404",
+      "sourceId": "505135404",
+      "sourceName": "JOHN STREET SQUARE SLR STOP",
+      "name": "John Street Square Light Rail",
+      "lat": -33.8673358,
+      "lng": 151.1921764,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.161Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-516881400",
+      "sourceId": "516881400",
+      "sourceName": "JUBILEE PARK SLR STOP",
+      "name": "Jubilee Park Light Rail",
+      "lat": -33.875405,
+      "lng": 151.1787248,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.401Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261185",
+      "sourceId": "518261185",
+      "sourceName": "JUNIORS KINGSFORD LIGHT RAIL STOP",
+      "name": "Juniors Kingsford Light Rail",
+      "lat": -33.9251473,
+      "lng": 151.2294582,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.237Z",
+      "aliases": []
+    },
+    {
+      "id": "katoomba",
+      "sourceId": "503816401",
+      "sourceName": "KATOOMBA RAILWAY STATION",
+      "name": "Katoomba Station",
+      "lat": -33.71181,
+      "lng": 150.3113464,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": true,
+      "sourceUpdated": "2023-04-24T08:57:08.243Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246747",
+      "sourceId": "518246747",
+      "sourceName": "KELLYVILLE RAILWAY STATION",
+      "name": "Kellyville Station",
+      "lat": -33.7134285,
+      "lng": 150.9353055,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.564Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261186",
+      "sourceId": "518261186",
+      "sourceName": "KENSINGTON LIGHT RAIL STOP",
+      "name": "Kensington Light Rail",
+      "lat": -33.9095216,
+      "lng": 151.2233843,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-05-28T11:08:10.384Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500170020",
+      "sourceId": "500170020",
+      "sourceName": "KILLARA RAILWAY STATION",
+      "name": "Killara Station",
+      "lat": -33.765597,
+      "lng": 151.1618661,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.326Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500301382",
+      "sourceId": "500301382",
+      "sourceName": "KINGS CROSS RAILWAY STATION",
+      "name": "Kings Cross Station",
+      "lat": -33.8744797,
+      "lng": 151.2220123,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.254Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261188",
+      "sourceId": "518261188",
+      "sourceName": "KINGSFORD LIGHT RAIL STOP",
+      "name": "Kingsford Light Rail",
+      "lat": -33.9222838,
+      "lng": 151.226993,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-05-28T11:08:10.425Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377798",
+      "sourceId": "504377798",
+      "sourceName": "KINGSGROVE RAILWAY STATION",
+      "name": "Kingsgrove Station",
+      "lat": -33.9405115,
+      "lng": 151.1006058,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.447Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501817886",
+      "sourceId": "501817886",
+      "sourceName": "KINGSWOOD RAILWAY STATION",
+      "name": "Kingswood Station",
+      "lat": -33.7583167,
+      "lng": 150.7200304,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.699Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504371355",
+      "sourceId": "504371355",
+      "sourceName": "KIRRAWEE RAILWAY STATION",
+      "name": "Kirrawee Station",
+      "lat": -34.0349114,
+      "lng": 151.0715502,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.872Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500295716",
+      "sourceId": "500295716",
+      "sourceName": "KOGARAH RAILWAY STATION",
+      "name": "Kogarah Station",
+      "lat": -33.9625632,
+      "lng": 151.1325725,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.389Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501716620",
+      "sourceId": "501716620",
+      "sourceName": "KOOLEWONG RAILWAY STATION",
+      "name": "Koolewong Station",
+      "lat": -33.4664156,
+      "lng": 151.3185399,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:13.887Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377822",
+      "sourceId": "504377822",
+      "sourceName": "LAKEMBA RAILWAY STATION",
+      "name": "Lakemba Station",
+      "lat": -33.9200983,
+      "lng": 151.0761486,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.278Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501818068",
+      "sourceId": "501818068",
+      "sourceName": "LAPSTONE RAILWAY STATION",
+      "name": "Lapstone Station",
+      "lat": -33.7734028,
+      "lng": 150.6428219,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-09T13:45:20.020Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503816900",
+      "sourceId": "503816900",
+      "sourceName": "LAWSON RAILWAY STATION",
+      "name": "Lawson Station",
+      "lat": -33.7189772,
+      "lng": 150.4299172,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-05-10T14:49:16.788Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881468",
+      "sourceId": "517881468",
+      "sourceName": "LEICHHARDT NORTH SLR STOP",
+      "name": "Leichhardt North Light Rail",
+      "lat": -33.874984,
+      "lng": 151.153979,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-09-20T15:16:07.716Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500227700",
+      "sourceId": "500227700",
+      "sourceName": "LEIGHTONFIELD RAILWAY STATION",
+      "name": "Leightonfield Station",
+      "lat": -33.8814952,
+      "lng": 150.9850546,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:37.284Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517643080",
+      "sourceId": "517643080",
+      "sourceName": "LEPPINGTON RAILWAY STATION",
+      "name": "Leppington Station",
+      "lat": -33.9544009,
+      "lng": 150.808031,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.802Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-502117630",
+      "sourceId": "502117630",
+      "sourceName": "LEUMEAH RAILWAY STATION",
+      "name": "Leumeah Station",
+      "lat": -34.0508024,
+      "lng": 150.8304404,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:07.068Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503816490",
+      "sourceId": "503816490",
+      "sourceName": "LEURA RAILWAY STATION",
+      "name": "Leura Station",
+      "lat": -33.7120324,
+      "lng": 150.3306446,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.282Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378317",
+      "sourceId": "504378317",
+      "sourceName": "LEWISHAM RAILWAY STATION",
+      "name": "Lewisham Station",
+      "lat": -33.8931854,
+      "lng": 151.1473585,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.525Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881476",
+      "sourceId": "517881476",
+      "sourceName": "LEWISHAM WEST SLR STOP",
+      "name": "Lewisham West Light Rail",
+      "lat": -33.8938265,
+      "lng": 151.1433923,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.129Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645814",
+      "sourceId": "504645814",
+      "sourceName": "LIDCOMBE RAILWAY STATION",
+      "name": "Lidcombe Station",
+      "lat": -33.8638766,
+      "lng": 151.045104,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.500Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-516881365",
+      "sourceId": "516881365",
+      "sourceName": "LILYFIELD SLR STOP",
+      "name": "Lilyfield Light Rail",
+      "lat": -33.8741412,
+      "lng": 151.1648783,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.353Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504360280",
+      "sourceId": "504360280",
+      "sourceName": "LINDEN RAILWAY STATION",
+      "name": "Linden Station",
+      "lat": -33.714973,
+      "lng": 150.505404,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.714Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135228",
+      "sourceId": "505135228",
+      "sourceName": "LINDFIELD RAILWAY STATION",
+      "name": "Lindfield Station",
+      "lat": -33.7750888,
+      "lng": 151.1690632,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-19T11:38:36.752Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504735239",
+      "sourceId": "504735239",
+      "sourceName": "LISAROW RAILWAY STATION",
+      "name": "Lisarow Station",
+      "lat": -33.3822147,
+      "lng": 151.3700002,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.657Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500228111",
+      "sourceId": "500228111",
+      "sourceName": "LIVERPOOL RAILWAY STATION",
+      "name": "Liverpool Station",
+      "lat": -33.924795,
+      "lng": 150.9272948,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.820Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500215511",
+      "sourceId": "500215511",
+      "sourceName": "LOFTUS RAILWAY STATION",
+      "name": "Loftus Station",
+      "lat": -34.0451269,
+      "lng": 151.0512902,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.630Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504309678",
+      "sourceId": "504309678",
+      "sourceName": "MACARTHUR RAILWAY STATION",
+      "name": "Macarthur Station",
+      "lat": -34.0719704,
+      "lng": 150.7971825,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.467Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378916",
+      "sourceId": "504378916",
+      "sourceName": "MACDONALDTOWN RAILWAY STATION",
+      "name": "Macdonaldtown Station",
+      "lat": -33.896735,
+      "lng": 151.1863496,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.464Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500227555",
+      "sourceId": "500227555",
+      "sourceName": "MACQUARIE FIELDS RAILWAY STATION",
+      "name": "Macquarie Fields Station",
+      "lat": -33.9848896,
+      "lng": 150.8788237,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:36.726Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-515602883",
+      "sourceId": "515602883",
+      "sourceName": "MACQUARIE PARK RAILWAY STATION",
+      "name": "Macquarie Park Station",
+      "lat": -33.7851612,
+      "lng": 151.1284528,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.719Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-515602882",
+      "sourceId": "515602882",
+      "sourceName": "MACQUARIE UNIVERSITY RAILWAY STATION",
+      "name": "Macquarie University Station",
+      "lat": -33.7774302,
+      "lng": 151.1180902,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.672Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501743683",
+      "sourceId": "501743683",
+      "sourceName": "MARAYONG RAILWAY STATION",
+      "name": "Marayong Station",
+      "lat": -33.7462485,
+      "lng": 150.9001243,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.412Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881472",
+      "sourceId": "517881472",
+      "sourceName": "MARION SLR STOP",
+      "name": "Marion Light Rail",
+      "lat": -33.8838327,
+      "lng": 151.1451087,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.035Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378174",
+      "sourceId": "504378174",
+      "sourceName": "MARRICKVILLE RAILWAY STATION",
+      "name": "Marrickville Station",
+      "lat": -33.9139288,
+      "lng": 151.153557,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.340Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500170764",
+      "sourceId": "500170764",
+      "sourceName": "MARTIN PLACE RAILWAY STATION",
+      "name": "Martin Place Station",
+      "lat": -33.8679105,
+      "lng": 151.2113425,
+      "kind": "origin",
+      "modes": [
+        "train",
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.399Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379180",
+      "sourceId": "504379180",
+      "sourceName": "MASCOT RAILWAY STATION",
+      "name": "Mascot Station",
+      "lat": -33.9230334,
+      "lng": 151.1873053,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.738Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645864",
+      "sourceId": "504645864",
+      "sourceName": "MEADOWBANK RAILWAY STATION",
+      "name": "Meadowbank Station",
+      "lat": -33.8156857,
+      "lng": 151.0901452,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-03-29T11:24:22.420Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503816379",
+      "sourceId": "503816379",
+      "sourceName": "MEDLOW BATH RAILWAY STATION",
+      "name": "Medlow Bath Station",
+      "lat": -33.6735407,
+      "lng": 150.2807241,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.177Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-502112282",
+      "sourceId": "502112282",
+      "sourceName": "MENANGLE PARK RAILWAY STATION",
+      "name": "Menangle Park Station",
+      "lat": -34.1036162,
+      "lng": 150.7449489,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-29T15:39:01.397Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504051204",
+      "sourceId": "504051204",
+      "sourceName": "MENANGLE RAILWAY STATION",
+      "name": "Menangle Station",
+      "lat": -34.1255486,
+      "lng": 150.7442595,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-29T15:39:02.185Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500261915",
+      "sourceId": "500261915",
+      "sourceName": "MERRYLANDS RAILWAY STATION",
+      "name": "Merrylands Station",
+      "lat": -33.8366667,
+      "lng": 150.9924858,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.191Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500172842",
+      "sourceId": "500172842",
+      "sourceName": "MILSONS POINT RAILWAY STATION",
+      "name": "Milsons Point Station",
+      "lat": -33.8459159,
+      "lng": 151.2119002,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.594Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504309673",
+      "sourceId": "504309673",
+      "sourceName": "MINTO RAILWAY STATION",
+      "name": "Minto Station",
+      "lat": -34.0273426,
+      "lng": 150.8425569,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:11.964Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504371362",
+      "sourceId": "504371362",
+      "sourceName": "MIRANDA RAILWAY STATION",
+      "name": "Miranda Station",
+      "lat": -34.0363778,
+      "lng": 151.1024893,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.950Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261189",
+      "sourceId": "518261189",
+      "sourceName": "MOORE PARK LIGHT RAIL STOP",
+      "name": "Moore Park Light Rail",
+      "lat": -33.8942425,
+      "lng": 151.2218124,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.480Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377404",
+      "sourceId": "504377404",
+      "sourceName": "MORTDALE RAILWAY STATION",
+      "name": "Mortdale Station",
+      "lat": -33.9706648,
+      "lng": 151.0811568,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.053Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504328854",
+      "sourceId": "504328854",
+      "sourceName": "MOUNT COLAH RAILWAY STATION",
+      "name": "Mount Colah Station",
+      "lat": -33.6715493,
+      "lng": 151.1149655,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.504Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504444020",
+      "sourceId": "504444020",
+      "sourceName": "MOUNT DRUITT RAILWAY STATION",
+      "name": "Mount Druitt Station",
+      "lat": -33.7695782,
+      "lng": 150.8201246,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.033Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504180075",
+      "sourceId": "504180075",
+      "sourceName": "MOUNT KU-RING-GAI RAILWAY STATION",
+      "name": "Mount Ku-Ring-Gai Station",
+      "lat": -33.6531681,
+      "lng": 151.1367811,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.918Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504155545",
+      "sourceId": "504155545",
+      "sourceName": "MOUNT VICTORIA RAILWAY STATION",
+      "name": "Mount Victoria Station",
+      "lat": -33.5879006,
+      "lng": 150.2569428,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-10-20T13:36:47.248Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501744016",
+      "sourceId": "501744016",
+      "sourceName": "MULGRAVE RAILWAY STATION",
+      "name": "Mulgrave Station",
+      "lat": -33.626696,
+      "lng": 150.8304645,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.462Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504594054",
+      "sourceId": "504594054",
+      "sourceName": "MUSEUM RAILWAY STATION",
+      "name": "Museum Station",
+      "lat": -33.8765492,
+      "lng": 151.2097313,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.681Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501716608",
+      "sourceId": "501716608",
+      "sourceName": "NARARA RAILWAY STATION",
+      "name": "Narara Station",
+      "lat": -33.3947125,
+      "lng": 151.3444364,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:13.866Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377490",
+      "sourceId": "504377490",
+      "sourceName": "NARWEE RAILWAY STATION",
+      "name": "Narwee Station",
+      "lat": -33.9474538,
+      "lng": 151.0699831,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.100Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378880",
+      "sourceId": "504378880",
+      "sourceName": "NEWTOWN RAILWAY STATION",
+      "name": "Newtown Station",
+      "lat": -33.8978561,
+      "lng": 151.1796345,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.444Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473261",
+      "sourceId": "518473261",
+      "sourceName": "NGARA LIGHT RAIL STOP",
+      "name": "Ngara Light Rail",
+      "lat": -33.8014161,
+      "lng": 151.0015339,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.270Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501716586",
+      "sourceId": "501716586",
+      "sourceName": "NIAGARA PARK RAILWAY STATION",
+      "name": "Niagara Park Station",
+      "lat": -33.3831887,
+      "lng": 151.3545367,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.590Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501576671",
+      "sourceId": "501576671",
+      "sourceName": "NORMANHURST RAILWAY STATION",
+      "name": "Normanhurst Station",
+      "lat": -33.7207461,
+      "lng": 151.097175,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.988Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-515602884",
+      "sourceId": "515602884",
+      "sourceName": "NORTH RYDE RAILWAY STATION",
+      "name": "North Ryde Station",
+      "lat": -33.7942978,
+      "lng": 151.1379805,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.765Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135514",
+      "sourceId": "505135514",
+      "sourceName": "NORTH STRATHFIELD RAILWAY STATION",
+      "name": "North Strathfield Station",
+      "lat": -33.8589094,
+      "lng": 151.0880083,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.235Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500171764",
+      "sourceId": "500171764",
+      "sourceName": "NORTH SYDNEY RAILWAY STATION",
+      "name": "North Sydney Station",
+      "lat": -33.8411912,
+      "lng": 151.2074063,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.532Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246741",
+      "sourceId": "518246741",
+      "sourceName": "NORWEST RAILWAY STATION",
+      "name": "Norwest Station",
+      "lat": -33.7344693,
+      "lng": 150.9637907,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.465Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500295670",
+      "sourceId": "500295670",
+      "sourceName": "OATLEY RAILWAY STATION",
+      "name": "Oatley Station",
+      "lat": -33.9806148,
+      "lng": 151.0791036,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.315Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500177020",
+      "sourceId": "500177020",
+      "sourceName": "OLYMPIC PARK RAILWAY STATION",
+      "name": "Olympic Park Station",
+      "lat": -33.8465169,
+      "lng": 151.0693674,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:36.432Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504088736",
+      "sourceId": "504088736",
+      "sourceName": "OTFORD RAILWAY STATION",
+      "name": "Otford Station",
+      "lat": -34.2107693,
+      "lng": 151.0056783,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:11.771Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505177292",
+      "sourceId": "505177292",
+      "sourceName": "OURIMBAH RAILWAY STATION",
+      "name": "Ourimbah Station",
+      "lat": -33.3595772,
+      "lng": 151.3699709,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:14.360Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378677",
+      "sourceId": "504378677",
+      "sourceName": "PADDYS MARKETS SLR STOP",
+      "name": "Paddys Markets Light Rail",
+      "lat": -33.8792914,
+      "lng": 151.2026963,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:20.943Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500295615",
+      "sourceId": "500295615",
+      "sourceName": "PADSTOW RAILWAY STATION",
+      "name": "Padstow Station",
+      "lat": -33.9519672,
+      "lng": 151.0322109,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.276Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504292156",
+      "sourceId": "504292156",
+      "sourceName": "PANANIA RAILWAY STATION",
+      "name": "Panania Station",
+      "lat": -33.9543732,
+      "lng": 150.9980173,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:41.986Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473256",
+      "sourceId": "518473256",
+      "sourceName": "PARRAMATTA SQUARE LIGHT RAIL STOP",
+      "name": "Parramatta Square Light Rail",
+      "lat": -33.8155613,
+      "lng": 151.0050962,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.171Z",
+      "aliases": []
+    },
+    {
+      "id": "parramatta",
+      "sourceId": "504645553",
+      "sourceName": "PARRAMATTA RAILWAY STATION",
+      "name": "Parramatta Station",
+      "lat": -33.8175574,
+      "lng": 151.0052653,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": true,
+      "sourceUpdated": "2023-04-24T08:57:11.385Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504444032",
+      "sourceId": "504444032",
+      "sourceName": "PENDLE HILL RAILWAY STATION",
+      "name": "Pendle Hill Station",
+      "lat": -33.8014412,
+      "lng": 150.9563419,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.067Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501576693",
+      "sourceId": "501576693",
+      "sourceName": "PENNANT HILLS RAILWAY STATION",
+      "name": "Pennant Hills Station",
+      "lat": -33.7379187,
+      "lng": 151.0725832,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-02T18:16:42.121Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501817957",
+      "sourceId": "501817957",
+      "sourceName": "PENRITH RAILWAY STATION",
+      "name": "Penrith Station",
+      "lat": -33.7501216,
+      "lng": 150.6964117,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.737Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377400",
+      "sourceId": "504377400",
+      "sourceName": "PENSHURST RAILWAY STATION",
+      "name": "Penshurst Station",
+      "lat": -33.966157,
+      "lng": 151.0888331,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.019Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378319",
+      "sourceId": "504378319",
+      "sourceName": "PETERSHAM RAILWAY STATION",
+      "name": "Petersham Station",
+      "lat": -33.8938826,
+      "lng": 151.155112,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.402Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504051491",
+      "sourceId": "504051491",
+      "sourceName": "PICTON RAILWAY STATION",
+      "name": "Picton Station",
+      "lat": -34.1790791,
+      "lng": 150.6125672,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-29T15:39:02.548Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501718442",
+      "sourceId": "501718442",
+      "sourceName": "POINT CLARE RAILWAY STATION",
+      "name": "Point Clare Station",
+      "lat": -33.446145,
+      "lng": 151.3284716,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:13.925Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473258",
+      "sourceId": "518473258",
+      "sourceName": "PRINCE ALFRED SQUARE LIGHT RAIL STOP",
+      "name": "Prince Alfred Square Light Rail",
+      "lat": -33.8091207,
+      "lng": 151.0052248,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.210Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500296326",
+      "sourceId": "500296326",
+      "sourceName": "PUNCHBOWL RAILWAY STATION",
+      "name": "Punchbowl Station",
+      "lat": -33.9253487,
+      "lng": 151.0555228,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:41.139Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504180079",
+      "sourceId": "504180079",
+      "sourceName": "PYMBLE RAILWAY STATION",
+      "name": "Pymble Station",
+      "lat": -33.7448014,
+      "lng": 151.1420843,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.964Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135406",
+      "sourceId": "505135406",
+      "sourceName": "PYRMONT BAY SLR STOP",
+      "name": "Pyrmont Bay Light Rail",
+      "lat": -33.8695422,
+      "lng": 151.1978303,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.209Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501743572",
+      "sourceId": "501743572",
+      "sourceName": "QUAKERS HILL RAILWAY STATION",
+      "name": "Quakers Hill Station",
+      "lat": -33.7276982,
+      "lng": 150.8865404,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.372Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261190",
+      "sourceId": "518261190",
+      "sourceName": "QVB LIGHT RAIL STOP",
+      "name": "QVB Light Rail",
+      "lat": -33.8716077,
+      "lng": 151.2069719,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.585Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261191",
+      "sourceId": "518261191",
+      "sourceName": "RANDWICK LIGHT RAIL STOP",
+      "name": "Randwick Light Rail",
+      "lat": -33.9170816,
+      "lng": 151.2405909,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.533Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378955",
+      "sourceId": "504378955",
+      "sourceName": "REDFERN RAILWAY STATION",
+      "name": "Redfern Station",
+      "lat": -33.8917229,
+      "lng": 151.1989113,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.663Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379577",
+      "sourceId": "504379577",
+      "sourceName": "REGENTS PARK RAILWAY STATION",
+      "name": "Regents Park Station",
+      "lat": -33.8830719,
+      "lng": 151.0240248,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.881Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504594161",
+      "sourceId": "504594161",
+      "sourceName": "REVESBY RAILWAY STATION",
+      "name": "Revesby Station",
+      "lat": -33.9525081,
+      "lng": 151.0151418,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.225Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135659",
+      "sourceId": "505135659",
+      "sourceName": "RHODES RAILWAY STATION",
+      "name": "Rhodes Station",
+      "lat": -33.8305091,
+      "lng": 151.0870907,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.275Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504190380",
+      "sourceId": "504190380",
+      "sourceName": "RICHMOND RAILWAY STATION",
+      "name": "Richmond Station",
+      "lat": -33.5987696,
+      "lng": 150.7527086,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.036Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501748638",
+      "sourceId": "501748638",
+      "sourceName": "RIVERSTONE RAILWAY STATION",
+      "name": "Riverstone Station",
+      "lat": -33.6792391,
+      "lng": 150.8603785,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.501Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500295626",
+      "sourceId": "500295626",
+      "sourceName": "RIVERWOOD RAILWAY STATION",
+      "name": "Riverwood Station",
+      "lat": -33.9514725,
+      "lng": 151.0520514,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:40.611Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473255",
+      "sourceId": "518473255",
+      "sourceName": "ROBIN THOMAS LIGHT RAIL STOP",
+      "name": "Robin Thomas Light Rail",
+      "lat": -33.8169622,
+      "lng": 151.0112903,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.150Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377570",
+      "sourceId": "504377570",
+      "sourceName": "ROCKDALE RAILWAY STATION",
+      "name": "Rockdale Station",
+      "lat": -33.9520148,
+      "lng": 151.1368863,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.347Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500247100",
+      "sourceId": "500247100",
+      "sourceName": "ROOTY HILL RAILWAY STATION",
+      "name": "Rooty Hill Station",
+      "lat": -33.7716233,
+      "lng": 150.8445904,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.996Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473253",
+      "sourceId": "518473253",
+      "sourceName": "ROSEHILL GARDENS LIGHT RAIL STOP",
+      "name": "Rosehill Gardens Light Rail",
+      "lat": -33.8181496,
+      "lng": 151.0245099,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.110Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505134961",
+      "sourceId": "505134961",
+      "sourceName": "ROSEVILLE RAILWAY STATION",
+      "name": "Roseville Station",
+      "lat": -33.7842805,
+      "lng": 151.1772821,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.016Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518246748",
+      "sourceId": "518246748",
+      "sourceName": "ROUSE HILL RAILWAY STATION",
+      "name": "Rouse Hill Station",
+      "lat": -33.6918101,
+      "lng": 150.9242102,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-04-01T14:54:01.610Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261193",
+      "sourceId": "518261193",
+      "sourceName": "ROYAL RANDWICK LIGHT RAIL STOP",
+      "name": "Royal Randwick Light Rail",
+      "lat": -33.9054938,
+      "lng": 151.2297179,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.559Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-516881379",
+      "sourceId": "516881379",
+      "sourceName": "ROZELLE BAY SLR STOP",
+      "name": "Rozelle Bay Light Rail",
+      "lat": -33.8718573,
+      "lng": 151.1727459,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2011-07-29T13:25:43.399Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504100682",
+      "sourceId": "504100682",
+      "sourceName": "SCARBOROUGH RAILWAY STATION",
+      "name": "Scarborough Station",
+      "lat": -34.2649163,
+      "lng": 150.9657331,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-20T15:15:23.999Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517387727",
+      "sourceId": "517387727",
+      "sourceName": "SCHOFIELDS RAILWAY STATION",
+      "name": "Schofields Station",
+      "lat": -33.7045158,
+      "lng": 150.873748,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.993Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379576",
+      "sourceId": "504379576",
+      "sourceName": "SEFTON RAILWAY STATION",
+      "name": "Sefton Station",
+      "lat": -33.885352,
+      "lng": 151.0117158,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.844Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500260804",
+      "sourceId": "500260804",
+      "sourceName": "SEVEN HILLS RAILWAY STATION",
+      "name": "Seven Hills Station",
+      "lat": -33.7743339,
+      "lng": 150.9361172,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.155Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501765129",
+      "sourceId": "501765129",
+      "sourceName": "SPRINGWOOD RAILWAY STATION",
+      "name": "Springwood Station",
+      "lat": -33.6990263,
+      "lng": 150.563798,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.542Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135690",
+      "sourceId": "505135690",
+      "sourceName": "ST JAMES RAILWAY STATION",
+      "name": "St James Station",
+      "lat": -33.8701708,
+      "lng": 151.2117528,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.316Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135029",
+      "sourceId": "505135029",
+      "sourceName": "ST LEONARDS RAILWAY STATION",
+      "name": "St Leonards Station",
+      "lat": -33.8222305,
+      "lng": 151.1941108,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:12.140Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500254916",
+      "sourceId": "500254916",
+      "sourceName": "ST MARYS RAILWAY STATION",
+      "name": "St Marys Station",
+      "lat": -33.7620909,
+      "lng": 150.7751829,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.035Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500297715",
+      "sourceId": "500297715",
+      "sourceName": "ST PETERS RAILWAY STATION",
+      "name": "St Peters Station",
+      "lat": -33.9072725,
+      "lng": 151.1807005,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.476Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378315",
+      "sourceId": "504378315",
+      "sourceName": "STANMORE RAILWAY STATION",
+      "name": "Stanmore Station",
+      "lat": -33.8944409,
+      "lng": 151.163879,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.488Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504174050",
+      "sourceId": "504174050",
+      "sourceName": "STANWELL PARK RAILWAY STATION",
+      "name": "Stanwell Park Station",
+      "lat": -34.226361,
+      "lng": 150.9810869,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.717Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135493",
+      "sourceId": "505135493",
+      "sourceName": "STRATHFIELD RAILWAY STATION",
+      "name": "Strathfield Station",
+      "lat": -33.8718035,
+      "lng": 151.0943382,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-21T13:22:15.411Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378278",
+      "sourceId": "504378278",
+      "sourceName": "SUMMER HILL RAILWAY STATION",
+      "name": "Summer Hill Station",
+      "lat": -33.8903359,
+      "lng": 151.1387039,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2024-10-01T08:32:35.526Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261197",
+      "sourceId": "518261197",
+      "sourceName": "SURRY HILLS LIGHT RAIL STOP",
+      "name": "Surry Hills Light Rail",
+      "lat": -33.8883174,
+      "lng": 151.2123329,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.585Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500216276",
+      "sourceId": "500216276",
+      "sourceName": "SUTHERLAND RAILWAY STATION",
+      "name": "Sutherland Station",
+      "lat": -34.031755,
+      "lng": 151.0572055,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:11.158Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379119",
+      "sourceId": "504379119",
+      "sourceName": "SYDENHAM RAILWAY STATION",
+      "name": "Sydenham Station",
+      "lat": -33.9148152,
+      "lng": 151.166044,
+      "kind": "origin",
+      "modes": [
+        "train",
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.547Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504051562",
+      "sourceId": "504051562",
+      "sourceName": "TAHMOOR RAILWAY STATION",
+      "name": "Tahmoor Station",
+      "lat": -34.223537,
+      "lng": 150.5900176,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-29T15:39:03.382Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518148812",
+      "sourceId": "518148812",
+      "sourceName": "TALLAWONG RAILWAY STATION",
+      "name": "Tallawong Station",
+      "lat": -33.6915791,
+      "lng": 150.9060129,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2022-06-14T12:29:56.954Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501718453",
+      "sourceId": "501718453",
+      "sourceName": "TASCOTT RAILWAY STATION",
+      "name": "Tascott Station",
+      "lat": -33.4509673,
+      "lng": 151.3185801,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:13.944Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881474",
+      "sourceId": "517881474",
+      "sourceName": "TAVERNERS HILL SLR STOP",
+      "name": "Taverners Hill Light Rail",
+      "lat": -33.8890012,
+      "lng": 151.145288,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.087Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518361175",
+      "sourceId": "518361175",
+      "sourceName": "TELOPEA LIGHT RAIL STOP",
+      "name": "Telopea Light Rail",
+      "lat": -33.7938583,
+      "lng": 151.0415011,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.392Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377762",
+      "sourceId": "504377762",
+      "sourceName": "TEMPE RAILWAY STATION",
+      "name": "Tempe Station",
+      "lat": -33.9242429,
+      "lng": 151.1564285,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.209Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135405",
+      "sourceId": "505135405",
+      "sourceName": "THE STAR SLR STOP",
+      "name": "The Star Light Rail",
+      "lat": -33.8672359,
+      "lng": 151.1950409,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.186Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504328851",
+      "sourceId": "504328851",
+      "sourceName": "THORNLEIGH RAILWAY STATION",
+      "name": "Thornleigh Station",
+      "lat": -33.7317613,
+      "lng": 151.078339,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-02T18:16:48.706Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500259915",
+      "sourceId": "500259915",
+      "sourceName": "TOONGABBIE RAILWAY STATION",
+      "name": "Toongabbie Station",
+      "lat": -33.7874278,
+      "lng": 150.951481,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.116Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518336378",
+      "sourceId": "518336378",
+      "sourceName": "TOWN HALL LIGHT RAIL STOP",
+      "name": "Town Hall Light Rail",
+      "lat": -33.8735562,
+      "lng": 151.2069181,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.702Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504378690",
+      "sourceId": "504378690",
+      "sourceName": "TOWN HALL RAILWAY STATION",
+      "name": "Town Hall Station",
+      "lat": -33.8739045,
+      "lng": 151.2068685,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.628Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473254",
+      "sourceId": "518473254",
+      "sourceName": "TRAMWAY AVENUE LIGHT RAIL STOP",
+      "name": "Tramway Avenue Light Rail",
+      "lat": -33.8172145,
+      "lng": 151.0184719,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.130Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505177160",
+      "sourceId": "505177160",
+      "sourceName": "TUGGERAH RAILWAY STATION",
+      "name": "Tuggerah Station",
+      "lat": -33.3077599,
+      "lng": 151.4202271,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:14.341Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501576660",
+      "sourceId": "501576660",
+      "sourceName": "TURRAMURRA RAILWAY STATION",
+      "name": "Turramurra Station",
+      "lat": -33.7323682,
+      "lng": 151.1285177,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.949Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504377903",
+      "sourceId": "504377903",
+      "sourceName": "TURRELLA RAILWAY STATION",
+      "name": "Turrella Station",
+      "lat": -33.9298779,
+      "lng": 151.1399261,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.486Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261199",
+      "sourceId": "518261199",
+      "sourceName": "UNSW ANZAC PARADE LIGHT RAIL STOP",
+      "name": "UNSW Anzac Parade Light Rail",
+      "lat": -33.9159176,
+      "lng": 151.2257838,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.612Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261200",
+      "sourceId": "518261200",
+      "sourceName": "UNSW HIGH STREET LIGHT RAIL STOP",
+      "name": "UNSW High Street Light Rail",
+      "lat": -33.9164022,
+      "lng": 151.235847,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.637Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501766662",
+      "sourceId": "501766662",
+      "sourceName": "VALLEY HEIGHTS RAILWAY STATION",
+      "name": "Valley Heights Station",
+      "lat": -33.7045149,
+      "lng": 150.5837706,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.616Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518302699",
+      "sourceId": "518302699",
+      "sourceName": "VICTORIA CROSS RAILWAY STATION",
+      "name": "Victoria Cross Station",
+      "lat": -33.8364927,
+      "lng": 151.2060569,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-02-18T09:14:06.178Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504292016",
+      "sourceId": "504292016",
+      "sourceName": "VILLAWOOD RAILWAY STATION",
+      "name": "Villawood Station",
+      "lat": -33.8808032,
+      "lng": 150.9765419,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.323Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501743794",
+      "sourceId": "501743794",
+      "sourceName": "VINEYARD RAILWAY STATION",
+      "name": "Vineyard Station",
+      "lat": -33.6503855,
+      "lng": 150.8511833,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-09T13:45:19.604Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501576605",
+      "sourceId": "501576605",
+      "sourceName": "WAHROONGA RAILWAY STATION",
+      "name": "Wahroonga Station",
+      "lat": -33.7176208,
+      "lng": 151.1169797,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.906Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501576594",
+      "sourceId": "501576594",
+      "sourceName": "WAITARA RAILWAY STATION",
+      "name": "Waitara Station",
+      "lat": -33.7100488,
+      "lng": 151.1045113,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:05.861Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261202",
+      "sourceId": "518261202",
+      "sourceName": "WANSEY ROAD LIGHT RAIL STOP",
+      "name": "Wansey Road Light Rail",
+      "lat": -33.910665,
+      "lng": 151.235381,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2020-03-26T09:17:40.665Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-517881477",
+      "sourceId": "517881477",
+      "sourceName": "WARATAH MILLS SLR STOP",
+      "name": "Waratah Mills Light Rail",
+      "lat": -33.8987718,
+      "lng": 151.140153,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-09-20T15:16:07.893Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-501576616",
+      "sourceId": "501576616",
+      "sourceName": "WARRAWEE RAILWAY STATION",
+      "name": "Warrawee Station",
+      "lat": -33.7241957,
+      "lng": 151.121793,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-02T18:16:40.319Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504360312",
+      "sourceId": "504360312",
+      "sourceName": "WARRIMOO RAILWAY STATION",
+      "name": "Warrimoo Station",
+      "lat": -33.7213659,
+      "lng": 150.6023752,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.751Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500228222",
+      "sourceId": "500228222",
+      "sourceName": "WARWICK FARM RAILWAY STATION",
+      "name": "Warwick Farm Station",
+      "lat": -33.9128525,
+      "lng": 150.9352099,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.857Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-502102344",
+      "sourceId": "502102344",
+      "sourceName": "WATERFALL RAILWAY STATION",
+      "name": "Waterfall Station",
+      "lat": -34.1346624,
+      "lng": 150.9945857,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:11.464Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518302113",
+      "sourceId": "518302113",
+      "sourceName": "WATERLOO RAILWAY STATION",
+      "name": "Waterloo Station",
+      "lat": -33.8975818,
+      "lng": 151.2000503,
+      "kind": "origin",
+      "modes": [
+        "metro"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-02-18T09:14:06.059Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135064",
+      "sourceId": "505135064",
+      "sourceName": "WAVERTON RAILWAY STATION",
+      "name": "Waverton Station",
+      "lat": -33.8376152,
+      "lng": 151.1974134,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.798Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503816501",
+      "sourceId": "503816501",
+      "sourceName": "WENTWORTH FALLS RAILWAY STATION",
+      "name": "Wentworth Falls Station",
+      "lat": -33.7096027,
+      "lng": 150.3764622,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.329Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-516881417",
+      "sourceId": "516881417",
+      "sourceName": "WENTWORTH PARK SLR STOP",
+      "name": "Wentworth Park Light Rail",
+      "lat": -33.8744358,
+      "lng": 151.193984,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2016-06-16T12:21:21.463Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504444039",
+      "sourceId": "504444039",
+      "sourceName": "WENTWORTHVILLE RAILWAY STATION",
+      "name": "Wentworthville Station",
+      "lat": -33.8071895,
+      "lng": 150.9726161,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.105Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504444010",
+      "sourceId": "504444010",
+      "sourceName": "WERRINGTON RAILWAY STATION",
+      "name": "Werrington Station",
+      "lat": -33.7591626,
+      "lng": 150.7576634,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:10.996Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504645875",
+      "sourceId": "504645875",
+      "sourceName": "WEST RYDE RAILWAY STATION",
+      "name": "West Ryde Station",
+      "lat": -33.8072095,
+      "lng": 151.0901781,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.543Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473263",
+      "sourceId": "518473263",
+      "sourceName": "WESTMEAD HOSPITAL LIGHT RAIL STOP",
+      "name": "Westmead Hospital Light Rail",
+      "lat": -33.8047182,
+      "lng": 150.9900921,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.307Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473264",
+      "sourceId": "518473264",
+      "sourceName": "WESTMEAD LIGHT RAIL STOP",
+      "name": "Westmead Light Rail",
+      "lat": -33.8076105,
+      "lng": 150.9876419,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.327Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504444040",
+      "sourceId": "504444040",
+      "sourceName": "WESTMEAD RAILWAY STATION",
+      "name": "Westmead Station",
+      "lat": -33.8084719,
+      "lng": 150.9878633,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:11.142Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504594295",
+      "sourceId": "504594295",
+      "sourceName": "WILEY PARK RAILWAY STATION",
+      "name": "Wiley Park Station",
+      "lat": -33.922954,
+      "lng": 151.0673004,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:44.488Z",
+      "serviceNote": "Southwest Metro conversion: opening announced for 30 October 2026. Check services for your travel date.",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504190384",
+      "sourceId": "504190384",
+      "sourceName": "WINDSOR RAILWAY STATION",
+      "name": "Windsor Station",
+      "lat": -33.6138069,
+      "lng": 150.8111663,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.123Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379146",
+      "sourceId": "504379146",
+      "sourceName": "WOLLI CREEK INTERCHANGE STATION",
+      "name": "Wolli Creek Station",
+      "lat": -33.9285209,
+      "lng": 151.1540576,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-26T10:03:12.507Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-505135036",
+      "sourceId": "505135036",
+      "sourceName": "WOLLSTONECRAFT RAILWAY STATION",
+      "name": "Wollstonecraft Station",
+      "lat": -33.831923,
+      "lng": 151.191772,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-27T15:56:45.778Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-502107426",
+      "sourceId": "502107426",
+      "sourceName": "WOMBARRA RAILWAY STATION",
+      "name": "Wombarra Station",
+      "lat": -34.2755082,
+      "lng": 150.9534988,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:06.911Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504735111",
+      "sourceId": "504735111",
+      "sourceName": "WONDABYNE RAILWAY STATION",
+      "name": "Wondabyne Station",
+      "lat": -33.4920932,
+      "lng": 151.2570616,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2014-05-16T13:03:14.126Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-503818478",
+      "sourceId": "503818478",
+      "sourceName": "WOODFORD RAILWAY STATION",
+      "name": "Woodford Station",
+      "lat": -33.7354863,
+      "lng": 150.4820531,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:08.473Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504371156",
+      "sourceId": "504371156",
+      "sourceName": "WOOLOOWARE RAILWAY STATION",
+      "name": "Woolooware Station",
+      "lat": -34.0476078,
+      "lng": 151.1437099,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:09.826Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504735141",
+      "sourceId": "504735141",
+      "sourceName": "WOY WOY RAILWAY STATION",
+      "name": "Woy Woy Station",
+      "lat": -33.4850922,
+      "lng": 151.32373,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2022-06-14T12:29:56.828Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518261203",
+      "sourceId": "518261203",
+      "sourceName": "WYNYARD LIGHT RAIL STOP",
+      "name": "Wynyard Light Rail",
+      "lat": -33.8666856,
+      "lng": 151.2071336,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:13.629Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500171075",
+      "sourceId": "500171075",
+      "sourceName": "WYNYARD RAILWAY STATION",
+      "name": "Wynyard Station",
+      "lat": -33.8659583,
+      "lng": 151.2059641,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.470Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-504379848",
+      "sourceId": "504379848",
+      "sourceName": "YAGOONA RAILWAY STATION",
+      "name": "Yagoona Station",
+      "lat": -33.9064847,
+      "lng": 151.0242383,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2019-04-17T13:13:43.913Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-518473252",
+      "sourceId": "518473252",
+      "sourceName": "YALLAMUNDI LIGHT RAIL STOP",
+      "name": "Yallamundi Light Rail",
+      "lat": -33.8099605,
+      "lng": 151.0292989,
+      "kind": "origin",
+      "modes": [
+        "lightRail"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2025-06-05T15:29:25.090Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-500245767",
+      "sourceId": "500245767",
+      "sourceName": "YENNORA RAILWAY STATION",
+      "name": "Yennora Station",
+      "lat": -33.8646515,
+      "lng": 150.9711608,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2023-04-24T08:57:04.951Z",
+      "aliases": []
+    },
+    {
+      "id": "nsw-station-516899265",
+      "sourceId": "516899265",
+      "sourceName": "ZIG ZAG RAILWAY STATION",
+      "name": "Zig Zag Station",
+      "lat": -33.4716607,
+      "lng": 150.2019612,
+      "kind": "origin",
+      "modes": [
+        "train"
+      ],
+      "demoSupported": false,
+      "sourceUpdated": "2021-11-11T08:07:14.076Z",
+      "aliases": []
+    }
+  ]
+}
