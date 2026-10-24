@@ -127,3 +127,9 @@ This points at the tools installed before the instruction to avoid making copies
 Use **Browse all 289 stations** below the starting-point selector. Search names or filter Train, Metro and Light rail. Selection updates your starting/return station; existing address search remains available. Station search uses the bundled official spatial catalogue and does not incur Google API calls. Extra stations require live routing; demo retains the original three sample origins.
 
 Coverage, attribution, source dates, operating-status limitations and refresh instructions are in [data/STATIONS.md](data/STATIONS.md). Refresh with `npm run refresh:stations`, review changes, run tests/build and restart the server. The live Trains preference includes Metro and light rail using Google's documented rail modes.
+
+### Planner pages and optional breaks
+
+The frontend uses three URL-backed views: `/#/scene`, `/#/choose-trip`, and `/#/itinerary`. Browser Back/Forward works between them. Drafts and generated results are saved only in this browser tab through session storage; refreshed results are labelled as saved and are not automatically regenerated. API keys/configuration are not stored in that snapshot. Opening a results URL without a saved trip returns to Set the scene.
+
+On Choose the trip, **Travel break** opens the existing café/lunch and transport preferences. Opening or cancelling it makes no planning request. **Apply & regenerate** explicitly recalculates the displayed trip; live regeneration may incur Google API usage.
